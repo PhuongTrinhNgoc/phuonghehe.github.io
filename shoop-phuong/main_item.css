@@ -1,75 +1,102 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.dia {
+}
+.ok {
+  text-align: center;
+}
+.dia {
+  background-image: (0, #333, #ccc);
+  text-transform: capitalize;
+}
+li a {
+  text-decoration: none;
+  list-style: none;
+  color: coral;
+  
+}
+span {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  color: white;
+  background-color: rgb(246, 145, 19);
+  max-width: 41%;
+  font-size: 83%;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-left: 4px;
+  margin-right: 6px;
+  border-radius: 5px;
+}
+.menu_con {
+  list-style: none;
+  margin-top: 50px;
+}
+.dia1 {
+  background-color: #e7e9eb;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.dia1:hover {
+  border-color: coral;
+}
+h1 {
+  margin: 10px;
+  background-color: #958989;
+  height: 40px;
+  text-align: center;
+}
+h3 {
+  max-width: 130px;
+  margin: 14px;
+  background-color: rgb(229 169 169);
+  border-radius: 5px;
+}
+.menu {
+  margin: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.anh {
+  max-width: 254px;
+  height: 218px;
+  border-radius: 5px;
 }
-.dia{
-   
+header{
+    background-color: #86d5bb;
 }
-.ok{
-    text-align: center;
-}
-.dia{
-    background-image: (0, #333, #ccc);
-    text-transform: capitalize;
-}
-li a{
-    text-decoration: none;
-    list-style: none;
-    color: coral;
-}
-span{
+.HD{
     display: flex;
     justify-content: space-between;
-}
-p{
-    color: white;
-    background-color: rgb(246, 145, 19);
-    max-width: 41%;
-    font-size: 83%;
-    text-transform: capitalize;
-    cursor: pointer;
-    margin-left: 4px;
-    margin-right: 6px;
-}
-.menu_con{
-    list-style: none;
-    margin-top: 50px;
-}
-.dia1{
- background-color: #e7e9eb;
- border: 2px solid white;
-}
-.dia1:hover{
-    border-color:  coral;
+    margin: 5px 20px 5px 20px;
+    padding: 17px 22px 6px 6px;
     
 }
-
-h1{
-    margin: 10px;
-    background-color: chocolate;
-    height: 40px;
-    text-align: center;
+header div a:hover {
+    border: 2px solid ;
+    border-color: tomato
 }
-h3{
-    max-width: 130px;
-    margin: 14px;
-    background-color: chocolate;
+.a{
+   
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.menu{
-    margin: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    
+.div_a a{
+   text-decoration: none;
+   color: crimson;
 }
-
-.anh{
-    max-width: 254px;
-    height: 218px;
+.S{
+    padding-left: 50px;
+    color: red;
 }
+.aaa{
+    padding-left: 30%;
 }
-}
-
-li{
-    
+.aaa1{
+    padding-left: 50px;
 }

@@ -1,0 +1,185 @@
+header{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #86d5bb;
+    border-radius: 5px;
+}
+.HD{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.div_a{
+    padding-top: 24px;
+}
+.div .h a,
+.div_a .link-1{
+    text-decoration: none;
+    color: red;
+    padding-left: 15px;
+}
+
+.link-1-2{
+    margin-right: 12px;
+}
+
+header div a:hover {
+    border: 2px solid ;
+    border-color: tomato
+}
+.a{ margin-left: 5px;
+    margin-right: 5px;
+}
+.HD.div_a .a{
+        text-decoration: none;
+        color: crimson;
+}
+.h1{
+    text-align: center;
+}
+.h2 a{
+    
+}
+h4{
+    background-color: rgb(184, 36, 36);
+    max-width: 27%;
+    color: white;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+    margin-left: 33%;
+}
+h4:hover{
+    text-decoration:underline;
+    color: tomato;
+}
+.sautap{
+    display: flex;
+}
+.tap{
+    padding-left: 69px;
+    display:flex;
+    margin-top: 50px;
+    
+}
+.tap_con{
+    list-style: none;
+}
+.tap_con:hover{
+    border-color: coral;
+    border: 2px;
+}
+.gia{
+    display:flex ;
+    justify-content: center;
+}
+.p465{
+    color: chocolate;
+    padding-left: 29px;
+}
+.p465:hover{
+    text-decoration: underline;
+}
+.p500{
+    text-decoration: line-through;
+    color: red;
+}
+span{
+    border-radius: 5px;
+}
+.ull{
+    cursor: pointer;
+    background-color: rgb(179, 230, 221);
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.ull:hover{
+    border-color: coral;
+}
+img{
+    max-width: 315px;
+    height: 177px;
+    border-radius: 5px;
+}
+.ban{
+    padding-left: 92px;
+}
+.ban:hover{
+    color: brown;
+    cursor: initial;
+}
+.ull{
+    background-color: rgb(158, 216, 218);
+    padding-left: 0px;
+}
+.sautap1_con{
+    display: flex;
+    width: 580px;
+    justify-content: space-evenly;
+    margin-top: 43px;
+    margin-left: -73px;
+}
+.phangiai{
+    border: 1px solid var(--color-bilu-t1);
+    background: #2e3546;
+    color: var(--color-bilu-t0);
+    padding: 9px 4px 0;
+    border: 1px solid rgb(103 58 183);
+    min-width: 30px;
+    min-height: 28px;
+    text-align: center;
+    font-family: sfprodisplay-semibold;
+    color: aliceblue;
+    list-style: none;
+}
+.phangiai:hover{
+    background: var(--color-bilu-c4);
+    color: var(--color-bilu-m0);
+}
+.mota_all{
+    margin-left: 14px;
+    margin-top: 60px;
+    line-height: 1.5;
+}
+.mota{
+    list-style: none;
+}
+.button{
+    padding-left: 51px;
+    padding-top: 33px;
+}
+.button_con:hover{
+    background-color: aqua;
+}
+.bo{
+    background-color: rgb(35 40 52);
+}
+.ke{
+    margin-left: 40%;
+    color: white;
+}
+.h1_gao{
+    color: white;
+    margin-left: 34%;
+    margin-right: 303px;
+    max-width: 38%;
+    text-transform: capitalize;
+}
+.h1_khunglong{
+    max-width: 50%;
+    margin-left: 25%;
+
+}
+
+
+.DK_body{
+    text-align: center;
+    margin-top: 21%;
+}
+
+
+.body_khunglong{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
