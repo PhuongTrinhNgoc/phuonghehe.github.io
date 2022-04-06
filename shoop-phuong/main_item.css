@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    background-image: linear-gradient();
+}
+li a{
+    text-decoration: none;
+    list-style: none;
+    color: coral;
+}
+p{
+    color: white;
+    background-color: rgb(246, 145, 19);
+    max-width: 25%;
+    font-size: 80%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.menu_con{
+    list-style: none;
+ 
+}
+.dia1{
+ background-color: #e7e9eb;
+ border: 2px solid white;
+}
+.dia1:hover{
+    border:solid coral;
+    
+}
+
+h1{
+    margin: 10px;
+    background-color: chocolate;
+    height: 40px;
+    text-align: center;
+}
+.menu{
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.anh{
+    max-width: 247px;
+    height: 170px;
+}
+}
+
+li{
+    
+}
