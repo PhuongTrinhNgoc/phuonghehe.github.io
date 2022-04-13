@@ -1,0 +1,5 @@
+/*!
+ * Build Version: 22.14.1
+ * Build Time: Thu Mar 24 2022 09:57:50 GMT-0500 (Central Daylight Time)
+ */
+(window.webpackJsonpAnalytics=window.webpackJsonpAnalytics||[]).push([[76],{668:function(t,a,n){"use strict";n.r(a);var e=n(19),i=n.n(e),o=n(47),s=n.n(o),r=n(40),d=n(502);a.default={moduleName:"promo",_addToCart:function(t){d.a.buildAddToCartData({eventData:t})},_setEvents:function(){var t;r.b.getData("isAccessoryFinderOpen")||(window.EventManagerWrapper.on("addToCart:done:success",i()(t=this._addToCart).call(t,this)),window.addEventListener("beforeunload",(function(){})))},_setData:function(){var t=r.b.getData("breadcrumb")||window.siteControlBreadcrumb;t&&s()(t).call(t,(function(t){if("Deal of the Day"===t.displayName)return r.b.setData("internalCampaign","DotD"),!0}))},initialize:function(t){return this._setEvents(),this._setData(),t.resolve(this)}}}}]);

@@ -1,0 +1,21 @@
+ul{
+    display: flex;
+    flex-direction: column;
+}
+.number_4{
+    order: -1000;
+}
+.number_8{
+    order:510;
+}
+.number_3{
+    order:100;
+
+}
+.number_1{
+    order:500;
+
+}
+.number_18{
+    order: 1000;
+}
