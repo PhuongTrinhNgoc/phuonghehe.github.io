@@ -128,3 +128,11 @@ li a{
 .menu_list_items_li_a,.menu_list_a{
     text-transform: capitalize;
 }
+.head_lazada{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_lazada{
+    height: 110px;
+}
