@@ -1,0 +1,31 @@
+*{
+    transition: 0.8s;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container_img{
+    margin-bottom: 140px;
+    text-align: center;
+}
+.img_item{
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+    box-shadow:  0 3px 13px gray;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.container_img:hover{
+    transform: scale(1.2);
+  
+}
