@@ -58,6 +58,7 @@ img.is_img_2{
 .items_img_mini :hover{
 
     border-bottom:5px solid #c662ef;
+    transform: 0.3s;
 }.items_img_mini,
 .items:hover{
     color: #c662ef;
