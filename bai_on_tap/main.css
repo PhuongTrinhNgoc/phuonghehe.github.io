@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.left {
+  width: 60%;
+ 
+  
+  height: 100%;
+ 
+}
+
+.right {
+  width: 40%;
+  padding-left: 40px;
+}
+.item {
+  display: flex;
+  width: 100%;
+  box-shadow:3px 2px 7px 3px rgb(0 0 0 / 15%);
+}
+.year {
+  background-color: #ef5321;
+  width: 100%;
+  height: 15%;
+  padding-top: 4px;
+}
+.date {
+  font-size: 40px;
+}
+.time {
+  font-size: 14px;
+}
+.date_time {
+  height: 85%;
+  background-color:#fe6d3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item_right {
+  width: 75%;
+  padding: 15px 5px 8px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item_left {
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  color: #fff;
+  
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.list_item_right_address {
+  display: flex;
+}
+.list_item_right_time {
+  width: 33.3%;
+  color:#464646 ;
+}
+.icon{
+    color: #464646;
+    margin-top: -2px;
+}
+.list_item_address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 27px;
+}
+.clear {
+  clear: both;
+  color: black;
+}
+
+a {
+  color: #464646;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.tittle:hover a{
+    text-decoration: underline;
+}
+.row{
+    font-size: 1.2rem;
+}
+.header{
+    padding: 50px 0 20px 0;
+}
+.item_head:hover{
+    text-decoration: underline;
+}
+.registration {
+  color: #464646;
+  text-decoration: none;
+  padding: 7px 0 5px 0;
+  color: #3c78e8;
+  border-top: 0.5px solid #c4c4c4e3;
+  cursor: pointer;
+}
+.anddress{
+    padding-left: 20px;
+}
+
+.dow{
+    width: 100%;
+    height: 100%;
+}
+.up{
+    padding-bottom: 15px;
+}
+iframe{
+    width: 100%;
+}
+i{
+    font-size: 12px;
+    padding: 0 10px 0 10px;
+}
+
+.item2{
+    margin: 50px 0 50px 0;
+
+}
+.year2{
+ background: #2682f2;
+}
+.year3{
+    background: #f89707;
+}
+.date_time2{
+   background: #4b96f2;
+}
+.date_time3{
+ background: #fbbc05;
+}
