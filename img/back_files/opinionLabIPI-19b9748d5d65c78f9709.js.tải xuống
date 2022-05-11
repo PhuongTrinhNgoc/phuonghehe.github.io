@@ -1,5 +1,0 @@
-/*!
- * Build Version: 22.14.1
- * Build Time: Thu Mar 24 2022 09:57:50 GMT-0500 (Central Daylight Time)
- */
-(window.webpackJsonpAnalytics=window.webpackJsonpAnalytics||[]).push([[63],{628:function(e,o,a){"use strict";a.r(o),o.default=function(e,o,a){var r=o.vt,t=o.ut,i=o.SID,c=o.breadcrumbId,n=o.breadcrumbName;window.OOo.oo_feedback_product=new window.OOo.Ocode({referrerRewrite:{searchPattern:/:\/\/[^/]*/,replacePattern:"://productspecs.bestbuy.com"},tealeafCookieName:"SID",customVariables:{feedbackType:"product_inline",skuID:a,vt:r,ut:t,SID:i,breadcrumbId:c,breadcrumbName:n}}),window.OOo.releaseDetails||(window.OOo.releaseDetails=[]),window.OOo.releaseDetails.push({author:"KS",timeStamp:"12/17/2020, 10:13:41",fileName:"oo_conf_inline_product.js",fileVersion:"1",ticketNumber:"DYN-1133454"}),window.OOo.oo_feedback_product.show()}}}]);

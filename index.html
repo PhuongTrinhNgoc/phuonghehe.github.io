@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shoop-phuong</title>
     <link rel="stylesheet" href="main.css">
-    
+</head>
 <body>
     <script src="main.js"></script>
-</head>
-    
 </body>
 </html>
+/*
+Giải thích:
+  - Ta khai báo một biến tên là reserved ở đầu function là một chuỗi rỗng (Biến này sẽ
+  trả về một chuỗi đã được đảo ngược sau khi cộng chuỗi).
+  - Bước 2:
+    + Lệnh 1: Ta khai báo biến i = str.length - 1, tức là giá trị ban đầu của i khi
+    chạy vòng lặp for là bằng giá trị của độ dài chuỗi trừ đi 1, tại sao lại trừ đi 1?
+    Vì index trong JS được đánh dấu từ 0 nhé. Ví dụ: chuỗi có 10 phần từ thì index của
+    nó chạy đến 9 là hết 10 phần tử rồi.
+    + Lệnh 2: Ta đặt i >= 0, tức là khi i giảm về đến 0 thì vòng lặp sẽ kết thúc.
+    + Lệnh 3: Ta cho i tự trừ đi một đơn vị sau mỗi lần lặp.
+  - Bước 3: Ta dùng kỹ thuật cộng chuỗi để nối các chữ lại với nhau sau mỗi lần lặp sẽ
+  được cộng dồn vào biến reversed.
+  - Bước 4: cuối cùng là in ra màn hình kết quả cuối cùng là biến reserved chứa đoạn 
+  chuỗi đã được đảo ngược
+*/

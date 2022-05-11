@@ -1,6 +1,4 @@
-alert('hi phuong')
-var fullName = 'trinh ngoc phuong';
-var age = 23;
-
-console.log(fullName);
-console.log(age)
+function ramdom1(max){
+    return (Math.random() * max);
+}
+console.log(random1(2));

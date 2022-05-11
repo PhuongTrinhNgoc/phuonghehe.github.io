@@ -1,5 +1,0 @@
-/*!
- * Build Version: 22.14.1
- * Build Time: Thu Mar 24 2022 09:57:50 GMT-0500 (Central Daylight Time)
- */
-(window.webpackJsonpAnalytics=window.webpackJsonpAnalytics||[]).push([[4],{396:function(e,t,n){"use strict";n.r(t);var a=n(12),o=n.n(a),r=n(28),c=n.n(r);t.default=function(e,t){var n,a=document.createElement("iframe"),r={cmd:"CP",AdvertiserID:"3110",ActionID:"11",ActionName:"BBY_Prod_Container_Pixel",BK_KEYWORD:t.uberCatName||"not_provided",SKU:t.skuId||"",CATEGORY:t.catName||"",BRAND:t.brand||"",u1:t.skuId||"",u2:t.catName||"",u3:t.brand||"",cachebuster:Math.floor(1e16*Math.random())};r=o()(n=c()(r)).call(n,(function(e){return e+"="+encodeURIComponent(r[e])})).join("&"),a.frameborder="0",a.margin="0",a.height="1",a.width="1",a.src="https://ats.everesttech.net/ats/ats?"+r,document.body.appendChild(a),a.style.display="none"}}}]);
