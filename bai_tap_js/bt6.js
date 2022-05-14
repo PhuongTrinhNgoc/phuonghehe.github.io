@@ -67,7 +67,8 @@ function factorial(n) {
 }
 ////bai tap (diu kien re nhanh) bai 3
 function toString1(x) {
-  if (x >= 8.5 && x <= 10) { //  x nằm trong khoảng từ 8.5 ==> 10 thì trả về chuỗi 
+  if (x >= 8.5 && x <= 10) {
+    //  x nằm trong khoảng từ 8.5 ==> 10 thì trả về chuỗi
     return "Điểm A";
   }
   if (x >= 7 && x <= 8.5) {
@@ -79,38 +80,110 @@ function toString1(x) {
   if (x >= 4 && x <= 5.5) {
     return "Điểm d";
   }
-  if (x >= 0 && x <= 4) {
+  if (x >= 0 && x < 4) {
     return "Điểm f";
   }
 }
 
 //bai tap (diu kien re nhanh) b4
-function translate(countryCode){
-  switch(countryCode){
-    case +84 :{
+function translate(countryCode) {
+  switch (countryCode) {
+    case +84: {
       return "xin chào";
       break;
     }
-    case +66 :{
+    case +66: {
       return "สวัสดี";
       break;
     }
-    case +7 :{
+    case +7: {
       return "привет";
       break;
     }
-    case +44 :{
+    case +44: {
       return "xin chào";
       break;
     }
-    case +82 :{
+    case +82: {
       return "안녕하세요";
       break;
     }
 
-    default : {
+    default: {
       return "xin chào";
     }
   }
 }
-console.log(translate(+82))
+
+// bai tap mang? b1
+let timeNow = new Date();
+let date = timeNow.getDate();
+let month = timeNow.getMonth() + 1;
+let year = timeNow.getFullYear();
+document.write(date + "/" + month + "/" + year);
+
+function checkDate(month){
+
+if (month <= 6 && month >= 4) document.write(" mùa hạ");
+
+if (month >= 7 && month <= 9) document.write(" mùa thu");
+
+if (month >= 10 && month <= 12) document.write(" mùa đông");
+
+if (month >= 1 && month <= 3) document.write(" mùa xuân");
+}
+
+// document.write(date + "/" + month + "/" + year + " mùa hạ");
+
+// bai tap mang? b2
+
+  function nameStudent(n){
+
+    let sum = [];
+    for(let i=0;i<n.length;i++){
+    sum.push(n[i]);
+    }
+    sum.sort();
+    for(let i=0;i<sum.length;i++){
+      document.write(`<h1>${i+1}.${sum[i]}</h1>`);
+    }
+  }
+
+  let n = ['phuong','thao','anh','bao'];
+nameStudent(n);
+
+// bai tap mang? b2
+
+function nameStudent(...n) {
+  arguments.n.sort();
+  for (let i = 0; i < n.length; i++) {
+    document.write(`<h1>${i + 1}.${n[i]}</h1>`); // i + 1 để số thứ tự bắt đầu từ 1 not 0
+  }                                               // lấy 1 ptu của n khi chạy qua 1 vòng lặp
+}
+
+// bai tap mang? b3
+
+//
+function myArray(number) {
+  let sum = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 == 0) {  // number[i]: lấy từng ptu khi chạy qua 1 vòng lặp
+      sum.push(numbers[i]);  // thêm từng phần tử sau khi lặp vào sum
+    }
+  }
+  return sum;
+}
+function myArray()
+
+
+
+// bai tap mang? b4
+
+function minNumber(x) {
+  x.sort(function(a,b){
+    return a-b;
+  });
+  return x[0];
+}
+
+minNumber([2, 4, 5, 1, 6]);
