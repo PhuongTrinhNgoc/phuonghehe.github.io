@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+    border: 0;
+    font-family: Open Sans,sans-serif;
+    line-height: 1.428571429;
+}
+html{
+    background-color: #ddd;
+}
+img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin:auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: -5px 0;
+    padding-bottom: 5px;
+  }
+
+[class*="col-"]{
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 10px;
+      
+  }
+  img{
+    cursor: pointer;
+  }
+  .all_h1{
+    display: flex;
+    align-items: center;
+    padding-bottom: -12px;
+    padding-top: 5px;
+}
+.anime_img{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+.manga-item-thumbnail{
+    border-radius: 10px;
+}
+  
+/* .anime_cha:hover img{
+    transform: scale(1.1);
+} */
+
+.anime_img:hover{
+    transform: scale(1.060);
+}
+  .col-1 {
+    width: 8.333333%;
+  }
+  
+  .col-2 {
+    width: 16.666667%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.333333%;
+  }
+  
+  .col-5 {
+    width: 41.666667%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.333333%;
+  }
+  
+  .col-8 {
+    width: 66.666667%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.333333%;
+  }
+  
+  .col-11 {
+    width: 91.666667%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  a{
+      text-decoration: none;
+      font-size: 12px;
+
+  }
+  /* .slider-item-img1{
+      margin: -5px 0;
+      padding-bottom: 10px;
+      margin-left: -5px;
+      
+  } */
