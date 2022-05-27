@@ -59,6 +59,18 @@ img {
 .anime_img:hover{
     transform: scale(1.060);
 }
+.tray-item-thumbnail2:hover{
+    border-radius: 15px;
+    transform: scale(1.060);
+    filter: brightness(70%);
+}
+
+
+
+.slider-item-img2:hover{
+    filter: brightness(80%);
+    transform: scale(1);
+  }
   .col-1 {
     width: 8.333333%;
   }
@@ -117,3 +129,33 @@ img {
       margin-left: -5px;
       
   } */
+
+  .head{
+    position: relative;
+  }
+  .text{
+      position:absolute;
+  }
+  .icon{
+    position: absolute;
+    top: 210px;
+    left: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #585656;
+}
+
+.icone{
+  width: 0;
+  height: 0;
+  border-left: 25px solid #fff ;
+  border-bottom: 17px solid transparent;
+  border-top: 17px solid transparent;
+  border-right: 25px solid transparent;
+  margin-left: 30px;
+}
