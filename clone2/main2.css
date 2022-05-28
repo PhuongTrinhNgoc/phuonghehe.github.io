@@ -58,12 +58,6 @@ img{
 .comic{
   margin-right: -7px;
 }
-
-/* .anime_cha:hover img{
-  transform: scale(1.1);
-} */
-
-
 .col-1 {
   width: 8.333333%;
 }
@@ -224,7 +218,7 @@ transform: scale(1.015);
 }
 
 .the_end{
-  margin-bottom:;
+  margin:20px;
 }
 
 .end{
