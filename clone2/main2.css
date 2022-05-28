@@ -51,6 +51,13 @@ img{
 .manga-item-thumbnail{
   border-radius: 10px;
 }
+.anime_news{
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.comic{
+  margin-right: -7px;
+}
 
 /* .anime_cha:hover img{
   transform: scale(1.1);
@@ -190,19 +197,48 @@ display: flex;
 }
 .clol-3_hover:hover{
 filter: brightness(80%);
-transform: scale(1.050);
+transform: scale(1.040);
 cursor: pointer;
+color: rgb(128, 111, 111);
 }
 
+.mini_text:hover{
+  filter: brightness(80%);
+transform: scale(1.040);
+}
 
 .slider-item-img2:hover{
 filter: brightness(80%);
-transform: scale(1.060);
+transform: scale(1.040);
 }
 .anime_img:hover{
-transform: scale(1.060);
+transform: scale(1.015);
 }
 .anime_img2:hover{
 border-radius: 10px;
-transform: scale(1.050);
+transform: scale(1.015);
+}
+.anime_img3:hover{
+  filter: brightness(80%);
+  transform: scale(1.040);
+}
+
+.the_end{
+  margin-bottom:;
+}
+
+.end{
+  background: #d80f16;
+  border-radius: 2px;
+  clear: both;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 6px 12px;
+  text-align: center;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; */
+  user-select: none;
+  width: 100px;
 }
