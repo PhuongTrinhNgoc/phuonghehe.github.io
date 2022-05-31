@@ -187,7 +187,7 @@
   
   .btn-search {
     right: 8px;
-    top: 7px;
+    top: 3px;
     border: 0;
     background-color: transparent;
   }
@@ -230,4 +230,27 @@
     width: 92.5%;
 top: 275px;
 left: 5px;
+}
+
+.btn{
+  background-color: gray;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 4px 10px 4px 10px;
+  margin-right: 4px;
+}
+.bi{font-size: 20px;}
+.container_fix{
+  margin-bottom: 8px;
+}
+.btn-policy:hover,
+.btn-user:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
+.btn-theme:hover{
+  color: #fff;
+  background-color: #5b7dff;
+  transition: none;
+  cursor: pointer;
 }

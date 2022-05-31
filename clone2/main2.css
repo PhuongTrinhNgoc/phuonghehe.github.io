@@ -155,7 +155,18 @@ a {
 .col-3 {
   position: relative;
 }
-
+.all_icon_10{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(216,15,22,.6);
+    border-radius: 100%;
+    color: #eee;
+    border: #d80f16;
+    text-align: center;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
 .all_icon {
   position: absolute;
   top: 10px;
@@ -266,12 +277,17 @@ cursor: pointer;
 color: rgb(128, 111, 111);
 } */
 
+.clol-3_hover:hover .all_icon_10{
+  display: none;
+}
+
 .col_img:hover .tray-item-thumbnail2,
 .all_icon:hover .tray-item-thumbnail2,
 .col_img2:hover .tray-item-thumbnail2,
 .col_img3:hover .tray-item-thumbnail2 {
   transform: scale(1.2);
   cursor: pointer;
+  
 }
 .all_icon:hover,
 .col_img3:hover {
