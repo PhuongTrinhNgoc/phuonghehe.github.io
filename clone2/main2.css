@@ -155,22 +155,35 @@ a {
 .col-3 {
   position: relative;
 }
-.all_icon_10{
+.all_icon_10 {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: rgba(216,15,22,.6);
-    border-radius: 100%;
-    color: #eee;
-    border: #d80f16;
-    text-align: center;
-    font-size: 16px;
-    flex-wrap: wrap;
+  background: rgba(216, 15, 22, 0.6);
+  border-radius: 100%;
+  color: #eee;
+  border: #d80f16;
+  text-align: center;
+  font-size: 16px;
+  flex-wrap: wrap;
 }
 .all_icon {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.all_icon4 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #00000066;
+  width: 65%;
+  left: 90px;
+  top: 20px;
+  padding: 5px;
+  color: #fff;
+  
 }
 .all_icon2 {
   position: absolute;
@@ -210,19 +223,19 @@ a {
   width: 97%;
   padding-bottom: 12px;
 }
-.mini_text_all_2{
+.mini_text_all_2 {
   width: 92%;
   top: 275px;
 }
-.chap{
+.chap {
   font-size: 14px;
   padding: 0 5px;
   background: gray;
   color: #fff;
   position: absolute;
-    top: 10px;
-    left: 10px;
-    border: 1px solid white;
+  top: 10px;
+  left: 10px;
+  border: 1px solid white;
 }
 .mini_text_all_1 {
   width: 97%;
@@ -277,7 +290,7 @@ cursor: pointer;
 color: rgb(128, 111, 111);
 } */
 
-.clol-3_hover:hover .all_icon_10{
+.clol-3_hover:hover .all_icon_10 {
   display: none;
 }
 
@@ -287,7 +300,6 @@ color: rgb(128, 111, 111);
 .col_img3:hover .tray-item-thumbnail2 {
   transform: scale(1.2);
   cursor: pointer;
-  
 }
 .all_icon:hover,
 .col_img3:hover {
@@ -319,12 +331,12 @@ transform: scale(1.015);
 .slider-item-img5:hover {
   filter: brightness(50%);
 }
-.ranking-item:hover .ranking-item-thumbnail{
+.ranking-item:hover .ranking-item-thumbnail {
   transform: calc(1.1);
   cursor: pointer;
 }
 
-.slider-item-img2{
+.slider-item-img2 {
   padding-bottom: 8px;
 }
 /*  */
@@ -349,11 +361,11 @@ transform: scale(1.015);
   z-index: -1;
   overflow: hidden;
 }
-.row_1{
+.row_1 {
   margin-right: -8px;
 }
-.col-2_1{
-  margin-right: 6px ;
+.col-2_1 {
+  margin-right: 6px;
   padding-right: 6px;
 }
 
@@ -398,10 +410,6 @@ img {
   margin-right: 10px;
   overflow: hidden;
 }
-.l90 {
-}
-.background-2 {
-}
 /*  */
 .the_end {
   margin: 20px;
@@ -422,6 +430,6 @@ img {
   user-select: none;
   width: 100px;
 }
-.head{
+.head {
   margin-top: 80px;
 }
