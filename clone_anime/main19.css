@@ -1,0 +1,101 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s linear;
+    font-family: Open Sans,sans-serif;
+    line-height: 1.428571429;
+}
+
+html{
+    background-color: #ddd;
+}
+/* .row_2{
+  margin-left: -6px;
+  margin-right: -6px;
+} */
+.h1_css{
+    display: flex;
+    align-items: center;
+    padding-bottom: -12px;
+    padding-top: 5px;
+}
+
+.fa-solid{
+margin-bottom: -5px;
+padding-left: -5px;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+
+  margin-top: -10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+[class*='col-'] {
+  margin-top: 10px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}

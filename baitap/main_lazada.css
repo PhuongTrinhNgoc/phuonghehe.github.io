@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 1000;
+}
+.container{
+   background: orangered
+}
+.container_background{
+    max-width: 100%;
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+}
+img{
+    height: 360px;
+}
+
+.container_items{
+    height: 360px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    
+}
+.menu{
+    position: absolute;
+    margin: 0;
+    background: #fff;
+    height: 349px;
+    box-shadow: 0 0 3px 1px gray;
+    line-height: 29px;
+    padding: 6px 0 6px 0;
+    width: 200px;
+    list-style: none;
+   
+}
+.menu_list{
+    padding-left: 10px;
+    position: relative;
+}
+li a{
+    list-style: none;
+    color: #757575;
+    text-decoration: none;
+}
+.menu_list_items{
+    position: absolute;
+    background: #fff;
+    height: 350px;
+    box-shadow: 0 0 3px 1px gray;
+    line-height: 29px;
+    padding: 6px 0 6px 0;
+    width: 200px;
+    list-style: none;
+    z-index: 2;
+    left: 200px;
+    top:-6px;
+    display: none;
+}
+.menu_list_items_li{
+    padding-left: 10px;
+}
+
+
+.menu_list:hover .menu_list_a,
+.menu_list_items_li:hover .menu_list_items_li_a,
+.menu_list:hover .icon_a{
+    color: orangered;
+}
+.menu_list:hover,
+.menu_list_items_li:hover{
+    background-color: #eff0f5;
+    cursor: pointer;
+}
+.menu_list1:hover .menu_list_items{
+    display: block;
+}
+
+.menu_list_items_2{
+    position: absolute;
+    background: #fff;
+    height: 350px;
+    box-shadow: 0 0 3px 1px gray;
+    line-height: 29px;
+    padding: 6px 0 6px 0;
+    width: 200px;
+    list-style: none;
+    z-index: 2;
+    left: 200px;
+    top:-35px;
+    display: none;
+}
+
+.menu_list_items_3{
+    position: absolute;
+    background: #fff;
+    height: 350px;
+    box-shadow: 0 0 3px 1px gray;
+    line-height: 29px;
+    padding: 6px 0 6px 0;
+    width: 200px;
+    list-style: none;
+    z-index: 2;
+    left: 200px;
+    top:-64px;
+    display: none;
+}
+.icon_a{
+    display: none;
+    padding-left: 65px;
+}
+
+.menu_list1:hover .icon_a{
+    display: inline-flex;
+}
+.icon_a1{
+    margin-left: 25px;
+    padding: 0;
+}
+.icon_a2{
+    padding-left: 78px;
+}
+.menu_list_items_li_a,.menu_list_a{
+    text-transform: capitalize;
+}
+.head_lazada{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_lazada{
+    height: 110px;
+}

@@ -1,5 +1,0 @@
-/*!
- * Build Version: 22.14.1
- * Build Time: Thu Mar 24 2022 09:57:50 GMT-0500 (Central Daylight Time)
- */
-(window.webpackJsonpAnalytics=window.webpackJsonpAnalytics||[]).push([[66],{625:function(e,a,n){"use strict";n.r(a);var o=n(9),c=n.n(o);a.default=function(e,a){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},o=c()(c()({},a),{},{feedbackType:"click"});o.breadcrumbId||delete o.breadcrumbId,o.breadcrumbName||delete o.breadcrumbName,window.OOo.oo_click=new window.OOo.Ocode({events:{onSingleClick:100},cookie:{name:"oo_click_gschat",type:"domain",expiration:2592e3},referrerRewrite:{searchPattern:/:\/\/[^\/]*/,replacePattern:"://gschat.bestbuy.com"},tealeafCookieName:"TLTSID",customVariables:o});var i=n.e||window.event,r=n.feedback||"oo_click";window.OOo[r].show(i,"onSingleClick"),window.EventManagerWrapper&&window.EventManagerWrapper.trigger("analytics:opinionLab:launch")}}}]);
