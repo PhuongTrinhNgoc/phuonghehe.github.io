@@ -29,7 +29,9 @@
           <div class="logo-box">
             <img src="https://vuighe.net/assets/img/logo_v8.png" alt="" />
           </div>
-
+          <div onclick="onBars()" class="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <nav class="nav as-end">
             <ul class="menu d-flex">
               <li class="menu-item">
@@ -293,7 +295,7 @@
                 </div>
               </li>
               <li class="menu-item">
-                <a href="" class="menu-link">Tin tức</a>
+                <a href="" class="menu-link">Tin</a>
 
                 <div class="sub-menu absolute">
                   <div class="container container_2">
@@ -684,7 +686,91 @@
               </li>
             </ul>
           </nav>
+          <div class="overlay" >
+            
+            <div class="nav_overlay">
+              <div class="nav_overlay_item">
+            <div class="logo-box_2">
+              <img src="https://vuighe.net/assets/img/logo_v8.png" alt="" />
+              <div onclick="closeX()" class="x">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="search-box_2">
+              <form action="" class="search-form">
+                <div class="form-group relative">
+                  <input class="input-search2" type="text" placeholder="Tìm kiếm anime">
+  
+                  <button class="btn-search absolute">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </form>
+  
+              <div class="search-results"></div>
+           
+        </div>
 
+
+        <div class="list_cartool">
+          <ul class="cartool">
+            <li class="li_items d-flex">
+              <div class="li_item_icon">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <div class="li_item_text">
+              anime
+                </div>
+                
+            </li>
+            <li class="li_items d-flex">
+              <div class="li_item_icon">
+                <i class="fa-solid fa-camera"></i>
+              </div>
+              <div class="li_item_text">
+              movie
+                </div>
+                
+            </li>
+            <li class="li_items d-flex">
+              <div class="li_item_icon">
+                <i class="fa-solid fa-memo">
+                  <i class="fa-solid fa-file-lines"></i>
+                </i>
+              </div>
+              <div class="li_item_text">
+              tin tức
+                </div>
+                
+            </li>
+            <li class="li_items d-flex">
+              <div class="li_item_icon">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="li_item_text">
+              truyện
+                </div>
+                
+            </li>
+            <li class="li_items d-flex">
+              <div class="li_item_icon">
+                <i class="fa-solid fa-ranking-star"></i>
+              </div>
+              <div class="li_item_text">
+              BXH
+                </div>
+                
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    
+          </div>
+       
+        </div>
           <div class="search-box">
             <form action="" class="search-form">
               <div class="form-group relative">
@@ -712,7 +798,7 @@
               <i class="bi bi-brightness-low"></i>
             </button>
 
-            <button class="btn btn-user">
+            <button onclick="" class="btn btn-user">
               <i class="bi bi-person-fill"></i>
             </button>
           </div>
@@ -726,8 +812,8 @@
     <section class="main">
       <div class="container">
         <div class="head">
-          <div class="row">
-            <div class="col-9 slider-item-img2">
+          <div class="row fl-wrap">
+            <div class="col-9 slider-item-img2 col-9_wrap">
               <img
                 class="activated"
                 src="https://s199.imacdn.com/vg/2022/03/23/c1aa39293c5ab28a_ba194e04c16acd98_25004316480362556118684.jpg"
@@ -744,9 +830,9 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_w">
               <div class="head_right">
-                <div class="col-12 slider-item-img2">
+                <div class="col-12 slider-item-img2 slider-item-img2_3">
                   <img
                     class="slider-item-img1"
                     src="https://s199.imacdn.com/vg/2021/10/10/d8fee77267b28507_5ecea58161a03d8a_2225981633864797661628.jpg"
@@ -754,7 +840,7 @@
                     alt="Komi-san wa, Comyushou desu."
                   />
                 </div>
-                <div class="col-12 slider-item-img2">
+                <div class="col-12 slider-item-img2 slider-item-img2_4">
                   <img
                     class="slider-item-img1"
                     src="https://s199.imacdn.com/vg/2022/03/24/e9ba6b39c946a642_4415a96836e029b9_3643841648094617861628.jpg"
@@ -762,7 +848,7 @@
                     alt="Kakkou no Iinazuke"
                   />
                 </div>
-                <div class="col-12 slider-item-img2">
+                <div class="col-12 slider-item-img2 col-12_close">
                   <img
                     class="slider-item-img1"
                     src="https://s199.imacdn.com/vg/2022/04/13/36b4627cc00756d8_1508b8decf0e730a_53012716498674109118684.jpg"
@@ -817,8 +903,8 @@
           </div>
         </div>
         <div class="anime_new">
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row fl-wrap">
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -838,7 +924,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -858,7 +944,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -878,89 +964,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
-              <div class="col_img3">
-                <img
-                  class="tray-item-thumbnail tray-item-thumbnail2"
-                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
-                />
-                <div class="icon all_icon all_icon_none">
-                  <div class="icone"></div>
-                </div>
-                <div class="mini_text all_icon mini_text_all_1">
-                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
-                    <p>tập 20- chuyến...</p>
-                    <p class="class_P">1,686 lượt xem</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3 clol-3_hover">
-              <div class="col_img3">
-                <img
-                  class="tray-item-thumbnail tray-item-thumbnail2"
-                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
-                />
-                <div class="icon all_icon all_icon_none">
-                  <div class="icone"></div>
-                </div>
-                <div class="mini_text all_icon mini_text_all_1">
-                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
-                    <p>tập 20- chuyến...</p>
-                    <p class="class_P">1,686 lượt xem</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 clol-3_hover">
-              <div class="col_img3">
-                <img
-                  class="tray-item-thumbnail tray-item-thumbnail2"
-                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
-                />
-                <div class="icon all_icon all_icon_none">
-                  <div class="icone"></div>
-                </div>
-                <div class="mini_text all_icon mini_text_all_1">
-                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
-                    <p>tập 20- chuyến...</p>
-                    <p class="class_P">1,686 lượt xem</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 clol-3_hover">
-              <div class="col_img3">
-                <img
-                  class="tray-item-thumbnail tray-item-thumbnail2"
-                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
-                />
-                <div class="icon all_icon all_icon_none">
-                  <div class="icone"></div>
-                </div>
-                <div class="mini_text all_icon mini_text_all_1">
-                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
-                    <p>tập 20- chuyến...</p>
-                    <p class="class_P">1,686 lượt xem</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -981,8 +985,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row fl-wrap">
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1002,7 +1006,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1022,7 +1026,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1042,7 +1046,89 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover col-3_50">
+              <div class="col_img3">
+                <img
+                  class="tray-item-thumbnail tray-item-thumbnail2"
+                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
+                />
+                <div class="icon all_icon all_icon_none">
+                  <div class="icone"></div>
+                </div>
+                <div class="mini_text all_icon mini_text_all_1">
+                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
+                  <div class="mini_text_2">
+                    <p>tập 20- chuyến...</p>
+                    <p class="class_P">1,686 lượt xem</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row fl-wrap">
+            <div class="col-3 clol-3_hover col-3_50">
+              <div class="col_img3">
+                <img
+                  class="tray-item-thumbnail tray-item-thumbnail2"
+                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
+                />
+                <div class="icon all_icon all_icon_none">
+                  <div class="icone"></div>
+                </div>
+                <div class="mini_text all_icon mini_text_all_1">
+                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
+                  <div class="mini_text_2">
+                    <p>tập 20- chuyến...</p>
+                    <p class="class_P">1,686 lượt xem</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 clol-3_hover col-3_50">
+              <div class="col_img3">
+                <img
+                  class="tray-item-thumbnail tray-item-thumbnail2"
+                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
+                />
+                <div class="icon all_icon all_icon_none">
+                  <div class="icone"></div>
+                </div>
+                <div class="mini_text all_icon mini_text_all_1">
+                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
+                  <div class="mini_text_2">
+                    <p>tập 20- chuyến...</p>
+                    <p class="class_P">1,686 lượt xem</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 clol-3_hover col-3_50">
+              <div class="col_img3">
+                <img
+                  class="tray-item-thumbnail tray-item-thumbnail2"
+                  src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
+                />
+                <div class="icon all_icon all_icon_none">
+                  <div class="icone"></div>
+                </div>
+                <div class="mini_text all_icon mini_text_all_1">
+                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
+                  <div class="mini_text_2">
+                    <p>tập 20- chuyến...</p>
+                    <p class="class_P">1,686 lượt xem</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 clol-3_hover col-3_50">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1072,9 +1158,9 @@
           </div>
         </div>
         <!--  -->
-        <div class="anime_news">
-          <div class="row">
-            <div class="col-3">
+        <div class="anime_news anime_news1">
+          <div class="row row_10">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6 slider-item-img5">
                   <img
@@ -1089,7 +1175,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1104,7 +1190,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1119,7 +1205,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1135,8 +1221,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3">
+          <div class="row row_10">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1151,7 +1237,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1167,7 +1253,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1183,7 +1269,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1199,8 +1285,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3">
+          <div class="row row_10 row_10_1">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1216,7 +1302,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1229,7 +1315,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1244,7 +1330,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 col-3_10">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -1269,8 +1355,8 @@
         </div>
         <!-- đ -->
         <div class="anime">
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row flex__wrap">
+            <div class="col-3 clol-3_hover withh withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1281,15 +1367,15 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1300,15 +1386,15 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1319,15 +1405,15 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1338,17 +1424,17 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row flex__wrap">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1359,15 +1445,15 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1378,15 +1464,15 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1397,15 +1483,15 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1416,9 +1502,9 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_5">
+                <div class="mini_text all_icon mini_text_all_5 all_icon_5_6">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
+                  <div class="mini_text_2 mini_text_2_1">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
                   </div>
                 </div>
@@ -1435,93 +1521,93 @@
         </div>
 
         <div class="comic">
-          <div class="row">
-            <div class="col-2">
+          <div class="row flex__wrap">
+            <div class="col-2 withh">
               <div class="col_img2">
                 <img
-                  class="slider-item-img2"
+                  class="slider-item-img2 slider-item-img2_radius"
                   class="manga-item-thumbnail"
                   src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
                 />
 
                 <div class="chap">chap 136</div>
 
-                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10">
+                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10 mini_text_all_10_10">
                   <h4 class="mini_text_3">Komi-Comyushou...</h4>
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withh">
               <div class="col_img2">
                 <img
-                  class="slider-item-img2"
+                  class="slider-item-img2 slider-item-img2_radius"
                   class="manga-item-thumbnail"
                   src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
                 />
 
                 <div class="chap">chap 136</div>
 
-                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10">
+                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10 mini_text_all_10_10">
                   <h4 class="mini_text_3">Komi-Comyushou...</h4>
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withh">
               <div class="col_img2">
                 <img
-                  class="slider-item-img2"
+                  class="slider-item-img2 slider-item-img2_radius"
                   class="manga-item-thumbnail"
                   src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
                 />
 
                 <div class="chap">chap 136</div>
 
-                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10">
+                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10 mini_text_all_10_10">
                   <h4 class="mini_text_3">Komi-Comyushou...</h4>
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withh">
               <div class="col_img2">
                 <img
-                  class="slider-item-img2"
+                  class="slider-item-img2 slider-item-img2_radius"
                   class="manga-item-thumbnail"
                   src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
                 />
 
                 <div class="chap">chap 136</div>
 
-                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10">
+                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10 mini_text_all_10_10">
                   <h4 class="mini_text_3">Komi-Comyushou...</h4>
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withh">
               <div class="col_img2">
                 <img
-                  class="slider-item-img2"
+                  class="slider-item-img2 slider-item-img2_radius"
                   class="manga-item-thumbnail"
                   src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
                 />
 
                 <div class="chap">chap 136</div>
 
-                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10">
+                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10 mini_text_all_10_10">
                   <h4 class="mini_text_3">Komi-Comyushou...</h4>
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withh">
               <div class="col_img2">
                 <img
-                  class="slider-item-img2"
+                  class="slider-item-img2 slider-item-img2_radius"
                   class="manga-item-thumbnail"
                   src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
                 />
 
                 <div class="chap">chap 136</div>
 
-                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10">
+                <div class="mini_text all_icon mini_text_all_2 mini_text_all_10 mini_text_all_10_10">
                   <h4 class="mini_text_3">Komi-Comyushou...</h4>
                 </div>
               </div>
@@ -1537,8 +1623,8 @@
         </div>
 
         <div class="memory">
-          <div class="row">
-            <div class="col-3">
+          <div class="row flex__wrap">
+            <div class="col-3 withh">
               <img
                 class="collection-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2022/03/05/803583cba5d569c2_3c4ab828e8e763bd_117964164647297779674.jpg"
@@ -1546,7 +1632,7 @@
                 alt="Anime Mùa Xuân 2022"
               />
             </div>
-            <div class="col-3">
+            <div class="col-3 withh">
               <img
                 class="collection-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2021/12/27/447d92824ddb9779_f3207425776138e9_98651164059040319674.jpg"
@@ -1554,7 +1640,7 @@
                 alt="Anime Mùa Đông 2022"
               />
             </div>
-            <div class="col-3">
+            <div class="col-3 withh">
               <img
                 class="collection-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2021/09/29/819d6a79cd97836d_6bc30ef29cbd18e5_173292163292978929674.jpg"
@@ -1562,7 +1648,7 @@
                 alt="Anime Mùa Thu 2021"
               />
             </div>
-            <div class="col-3">
+            <div class="col-3 withh">
               <img
                 class="collection-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2021/06/22/ba2d1585b27d5133_34047b8f19e96ceb_3441016243409554118684.jpg"
@@ -1581,78 +1667,78 @@
         </div>
         <!--  -->
         <div class="anime_movie">
-          <div class="row">
-            <div class="col-2">
+          <div class="row flex__wrap">
+            <div class="col-2 withh">
               <img
                 class="tray-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2022/05/10/f5cbf7851820a58d_370e0ad8022e42ce_3471316521755813118684.jpg"
               />
-              <div class="mini_text all_icon all_icon2 all_icon3">
+              <div class="mini_text all_icon all_icon2 all_icon3 all_icon3_11">
                 <h4 class="mini_text_3">Komi-san wa...</h4>
-                <div class="mini_text_2">
+                <div class="mini_text_2 mini_text_2_1">
                   <p class="class_P class_P_3">1,686 lượt xem</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-2">
+            <div class="col-2 withh">
               <img
                 class="tray-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2022/05/10/f5cbf7851820a58d_370e0ad8022e42ce_3471316521755813118684.jpg"
               />
-              <div class="mini_text all_icon all_icon2 all_icon3">
+              <div class="mini_text all_icon all_icon2 all_icon3 all_icon3_11">
                 <h4 class="mini_text_3">Komi-san wa...</h4>
-                <div class="mini_text_2">
+                <div class="mini_text_2 mini_text_2_1">
                   <p class="class_P class_P_3">1,686 lượt xem</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-2">
+            <div class="col-2 withh">
               <img
                 class="tray-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2022/05/10/f5cbf7851820a58d_370e0ad8022e42ce_3471316521755813118684.jpg"
               />
-              <div class="mini_text all_icon all_icon2 all_icon3">
+              <div class="mini_text all_icon all_icon2 all_icon3 all_icon3_11">
                 <h4 class="mini_text_3">Komi-san wa...</h4>
-                <div class="mini_text_2">
+                <div class="mini_text_2 mini_text_2_1">
                   <p class="class_P class_P_3">1,686 lượt xem</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-2">
+            <div class="col-2 withh">
               <img
                 class="tray-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2022/05/10/f5cbf7851820a58d_370e0ad8022e42ce_3471316521755813118684.jpg"
               />
-              <div class="mini_text all_icon all_icon2 all_icon3">
+              <div class="mini_text all_icon all_icon2 all_icon3 all_icon3_11">
                 <h4 class="mini_text_3">Komi-san wa...</h4>
-                <div class="mini_text_2">
+                <div class="mini_text_2 mini_text_2_1">
                   <p class="class_P class_P_3">1,686 lượt xem</p>
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withh">
               <img
                 class="tray-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2022/05/10/f5cbf7851820a58d_370e0ad8022e42ce_3471316521755813118684.jpg"
               />
-              <div class="mini_text all_icon all_icon2 all_icon3">
+              <div class="mini_text all_icon all_icon2 all_icon3 all_icon3_11">
                 <h4 class="mini_text_3">Komi-san wa...</h4>
-                <div class="mini_text_2">
+                <div class="mini_text_2 mini_text_2_1">
                   <p class="class_P class_P_3">1,686 lượt xem</p>
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withh">
               <img
                 class="tray-item-thumbnail"
                 src="https://s199.imacdn.com/vg/2022/05/10/f5cbf7851820a58d_370e0ad8022e42ce_3471316521755813118684.jpg"
               />
-              <div class="mini_text all_icon all_icon2 all_icon3">
+              <div class="mini_text all_icon all_icon2 all_icon3 all_icon3_11">
                 <h4 class="mini_text_3">Komi-san wa...</h4>
-                <div class="mini_text_2">
+                <div class="mini_text_2 mini_text_2_1">
                   <p class="class_P class_P_3">1,686 lượt xem</p>
                 </div>
               </div>
@@ -1668,8 +1754,8 @@
         </div>
         <!-- u -->
         <div class="anime_today">
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row flex__wrap">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1682,7 +1768,7 @@
                 </div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all">
+                <div class="mini_text all_icon mini_text_all mini_text_all_11">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p>tập 20- chuyến...</p>
@@ -1691,7 +1777,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1703,7 +1789,7 @@
                   <div class="icone"></div>
                 </div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all">
+                <div class="mini_text all_icon mini_text_all mini_text_all_11">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p>tập 20- chuyến...</p>
@@ -1712,7 +1798,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1724,7 +1810,7 @@
                   <div class="icone"></div>
                 </div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all">
+                <div class="mini_text all_icon mini_text_all mini_text_all_11">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p>tập 20- chuyến...</p>
@@ -1733,7 +1819,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1745,7 +1831,7 @@
                   <div class="icone"></div>
                 </div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all">
+                <div class="mini_text all_icon mini_text_all mini_text_all_11">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p>tập 20- chuyến...</p>
@@ -1757,8 +1843,8 @@
           </div>
 
           <div class="anime_today">
-            <div class="row">
-              <div class="col-3 clol-3_hover">
+            <div class="row flex__wrap">
+              <div class="col-3 clol-3_hover withh">
                 <div class="col_img3">
                   <img
                     class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1770,7 +1856,7 @@
                     <div class="icone"></div>
                   </div>
                   <div class="all_icon4 all_icon_none">48/48 tập</div>
-                  <div class="mini_text all_icon mini_text_all">
+                  <div class="mini_text all_icon mini_text_all mini_text_all_11">
                     <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                     <div class="mini_text_2">
                       <p>tập 20- chuyến...</p>
@@ -1779,7 +1865,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 clol-3_hover">
+              <div class="col-3 clol-3_hover withh">
                 <div class="col_img3">
                   <img
                     class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1791,7 +1877,7 @@
                     <div class="icone"></div>
                   </div>
                   <div class="all_icon4 all_icon_none">48/48 tập</div>
-                  <div class="mini_text all_icon mini_text_all">
+                  <div class="mini_text all_icon mini_text_all mini_text_all_11">
                     <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                     <div class="mini_text_2">
                       <p>tập 20- chuyến...</p>
@@ -1800,7 +1886,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 clol-3_hover">
+              <div class="col-3 clol-3_hover withh">
                 <div class="col_img3">
                   <img
                     class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1812,7 +1898,7 @@
                     <div class="icone"></div>
                   </div>
                   <div class="all_icon4 all_icon_none">48/48 tập</div>
-                  <div class="mini_text all_icon mini_text_all">
+                  <div class="mini_text all_icon mini_text_all mini_text_all_11">
                     <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                     <div class="mini_text_2">
                       <p>tập 20- chuyến...</p>
@@ -1821,7 +1907,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 clol-3_hover">
+              <div class="col-3 clol-3_hover withh">
                 <div class="col_img3">
                   <img
                     class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1833,7 +1919,7 @@
                     <div class="icone"></div>
                   </div>
                   <div class="all_icon4 all_icon_none">48/48 tập</div>
-                  <div class="mini_text all_icon mini_text_all">
+                  <div class="mini_text all_icon mini_text_all mini_text_all_11">
                     <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                     <div class="mini_text_2">
                       <p>tập 20- chuyến...</p>
@@ -1854,8 +1940,8 @@
         </div>
         <!-- aa -->
         <div class="anime_rank">
-          <div class="row row_1">
-            <div class="col-2">
+          <div class="row row_1 flex__wrap">
+            <div class="col-2 withhh">
               <div class="ranking-item l90 background-2 col_img3 col-2_1">
                 <div class="ranking-item-thumbnail">
                   <img
@@ -1872,7 +1958,7 @@
 
             <!--  -->
 
-            <div class="col-2">
+            <div class="col-2 withhh">
               <div class="ranking-item l90 background-2 col_img3 col-2_1">
                 <div class="ranking-item-thumbnail">
                   <img
@@ -1886,7 +1972,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withhh">
               <div class="ranking-item l90 background-2 col_img3 col-2_1">
                 <div class="ranking-item-thumbnail">
                   <img
@@ -1900,7 +1986,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withhh">
               <div class="ranking-item l90 background-2 col_img3 col-2_1">
                 <div class="ranking-item-thumbnail">
                   <img
@@ -1914,7 +2000,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withhh">
               <div class="ranking-item l90 background-2 col_img3 col-2_1">
                 <div class="ranking-item-thumbnail">
                   <img
@@ -1928,7 +2014,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 withhh">
               <div class="ranking-item l90 background-2 col_img3 col-2_1">
                 <div class="ranking-item-thumbnail">
                   <img
@@ -1953,8 +2039,30 @@
         </div>
         <!-- end -->
         <div class="all_anime">
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row flex__wrap">
+            <div class="col-3 clol-3_hover withh withh">
+              <div class="col_img3">
+                <img
+                  class="tray-item-thumbnail tray-item-thumbnail2"
+                  src="https://s199.imacdn.com/vg/2022/05/10/691749b6281b18d0_6df2acf58c9cc613_2537116521718196118684.jpg"
+                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
+                />
+                <div class="icon all_icon_10 sapchieu">sắp chiếu</div>
+                <div class="icon all_icon_10 sapchieu">sắp chiếu</div>
+                <div class="icon all_icon all_icon_none">
+                  <div class="icone"></div>
+                </div>
+                <div class="all_icon4 all_icon_none">48/48 tập</div>
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
+                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
+                  <div class="mini_text_2">
+                    <p class="class_P class_P_3">1,686 lượt xem</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1967,7 +2075,7 @@
                   <div class="icone"></div>
                 </div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -1975,7 +2083,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -1988,7 +2096,7 @@
                   <div class="icone"></div>
                 </div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -1996,28 +2104,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
-              <div class="col_img3">
-                <img
-                  class="tray-item-thumbnail tray-item-thumbnail2"
-                  src="https://s199.imacdn.com/vg/2022/05/10/691749b6281b18d0_6df2acf58c9cc613_2537116521718196118684.jpg"
-                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
-                />
-                <div class="icon all_icon_10 sapchieu">sắp chiếu</div>
-                <div class="icon all_icon all_icon_none">
-                  <div class="icone"></div>
-                </div>
-                <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all_1">
-                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
-                    <p class="class_P class_P_3">1,686 lượt xem</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2029,7 +2116,7 @@
                   <div class="icone"></div>
                 </div>
                 <div class="all_icon4 all_icon_none">48/48 tập</div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2038,8 +2125,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row flex__wrap">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2051,7 +2138,7 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2059,7 +2146,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2070,7 +2157,7 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2078,7 +2165,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2090,7 +2177,7 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2098,7 +2185,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2109,7 +2196,7 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2118,8 +2205,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3 clol-3_hover">
+          <div class="row flex__wrap">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2131,7 +2218,7 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2139,7 +2226,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2150,7 +2237,7 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2158,27 +2245,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 clol-3_hover">
-              <div class="col_img3">
-                <img
-                  class="tray-item-thumbnail tray-item-thumbnail2"
-                  src="https://s199.imacdn.com/vg/2022/05/10/691749b6281b18d0_6df2acf58c9cc613_2537116521718196118684.jpg"
-                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
-                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
-                />
-                <div class="icon all_icon_10 sapchieu">sắp chiếu</div>
-                <div class="icon all_icon all_icon_none">
-                  <div class="icone"></div>
-                </div>
-                <div class="mini_text all_icon mini_text_all_1">
-                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
-                  <div class="mini_text_2">
-                    <p class="class_P class_P_3">1,686 lượt xem</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 clol-3_hover">
+            <div class="col-3 clol-3_hover withh">
               <div class="col_img3">
                 <img
                   class="tray-item-thumbnail tray-item-thumbnail2"
@@ -2190,7 +2257,27 @@
                 <div class="icon all_icon all_icon_none">
                   <div class="icone"></div>
                 </div>
-                <div class="mini_text all_icon mini_text_all_1">
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
+                  <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
+                  <div class="mini_text_2">
+                    <p class="class_P class_P_3">1,686 lượt xem</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 clol-3_hover withh">
+              <div class="col_img3">
+                <img
+                  class="tray-item-thumbnail tray-item-thumbnail2"
+                  src="https://s199.imacdn.com/vg/2022/05/10/691749b6281b18d0_6df2acf58c9cc613_2537116521718196118684.jpg"
+                  data-src="https://s199.imacdn.com/vg/2022/05/26/f7485644b8f0636f_8ac3aca1a006aac1_14208816535799298814814.jpg"
+                  alt="Digimon Ghost Game Tập 26 - Cơn đói của dinh thự"
+                />
+                <div class="icon all_icon_10 sapchieu">sắp chiếu</div>
+                <div class="icon all_icon all_icon_none">
+                  <div class="icone"></div>
+                </div>
+                <div class="mini_text all_icon mini_text_all_1 all_icon_5_5">
                   <h4 class="mini_text_3">Komi-san wa, Comyushou...</h4>
                   <div class="mini_text_2">
                     <p class="class_P class_P_3">1,686 lượt xem</p>
@@ -2213,4 +2300,5 @@
       </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>

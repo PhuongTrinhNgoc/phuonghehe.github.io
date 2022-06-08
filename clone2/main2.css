@@ -117,6 +117,7 @@ a {
 
 .head {
   position: relative;
+  margin-top: 80px;
 }
 .text {
   position: absolute;
@@ -183,7 +184,6 @@ a {
   top: 20px;
   padding: 5px;
   color: #fff;
-  
 }
 .all_icon2 {
   position: absolute;
@@ -431,5 +431,161 @@ img {
   width: 100px;
 }
 .head {
-  margin-top: 80px;
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .d-flex {
+    width: 100%;
+  }
+  .logo-box {
+    width: 20%;
+    margin-left: 5px;
+  }
+  .mini_text {
+    top: 55px;
+  }
+  .btn-actions {
+    width: 20%;
+  }
+
+  .head {
+    margin-top: 77px;
+  }
+  .icon_2 {
+    top: 135px;
+  }
+  .text {
+    top: 145px;
+  }
+  .header {
+    width: 100%;
+  }
+  .btn-actions {
+    display: flex;
+  }
+  .mini_text_all_1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+  }
+  .mini_text_2 {
+    margin-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+  }
+  .mini_text_3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+    margin-left: 5px;
+  }
+  .class_P {
+    padding-left: 10px;
+  }
+  p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+  }
+  .container_fix {
+    width: 100%;
+  }
+
+  .menu {
+    margin-left: -21%;
+  }
+  .class_p_3 {
+    padding-left: 0;
+  }
+  .ranking-item-thumbnail {
+    width: 126%;
+  }
+  .nav,
+  .search_box {
+    display: none;
+  }
+}
+
+@media (max-width: 767px){
+  .container {
+    max-width: 700px;
+    margin: auto;
+  }
+  .nav {
+    display: none;
+  }
+  .mini_text_all_1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+  }
+  .mini_text_2 {
+    margin-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+  }
+  .mini_text_3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+    margin-left: 5px;
+  }
+  .class_P {
+    padding-left: 10px;
+  }
+  p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+  }
+  .container_fix {
+    width: 100%;
+  }
+
+  .menu {
+    margin-left: -21%;
+  }
+  .class_p_3 {
+    padding-left: 0;
+  }
+  .ranking-item-thumbnail {
+    width: 126%;
+  }
+  
+  .clol-3_hover:hover .all_icon_none {
+    display: none;
+  }
+  .all_icon_10 {
+    display: none;
+  }
+  .ranking-item-thumbnail {
+    width: 126%;
+  }
+  .nav,
+  .search-box {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+ 
+  .bars:hover {
+    cursor: pointer;
+  }
+  .class_P_3{
+    padding-left: 0;
+  }
+  .mini_text_all_10_10{
+    top: 20px;
+  }
+  
 }
