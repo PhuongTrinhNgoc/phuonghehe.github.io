@@ -297,6 +297,7 @@
   border-radius: 5px;
   outline: none;
   border: 1px solid rgb(172, 164, 164);
+  width: 100%;
 }
 .search-box_2 {
   margin-bottom: 20px;
@@ -309,7 +310,8 @@
   cursor: pointer;
 }
 .li_item_text {
-  margin-left: 10px;
+  margin-left: 20px;
+  /* padding-left: 10px; */
 }
 .x {
   position: fixed;
@@ -379,6 +381,7 @@
   }
   .btn-actions {
     display: flex;
+    padding: 7px 0;
   }
   .container_fix {
     width: 100%;
@@ -429,6 +432,7 @@
   }
   .bars {
     display: block;
+    font-size: 20px;
   }
   .bars:hover {
     cursor: pointer;
@@ -555,4 +559,14 @@
     top: 58px;
     width: 95%;
   }
+  .btn-search{
+    left: 216px;
+  }
 }
+.li_item_text2{
+  padding-left: 6px;
+}
+.li_item_text3{
+  padding-left: 3px;
+}
+

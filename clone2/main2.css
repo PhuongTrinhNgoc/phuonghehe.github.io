@@ -430,8 +430,7 @@ img {
   user-select: none;
   width: 100px;
 }
-.head {
-}
+
 @media (max-width: 1023px) and (min-width: 768px) {
   .d-flex {
     width: 100%;
@@ -587,5 +586,7 @@ img {
   .mini_text_all_10_10{
     top: 20px;
   }
+ 
   
 }
+
