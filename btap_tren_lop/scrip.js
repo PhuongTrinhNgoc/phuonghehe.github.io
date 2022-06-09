@@ -26,9 +26,7 @@
 // const newContent = words.join(" ");
 // p.innerHTML = newContent;
 // document.title = count
-function clickButton(){
-    document.getElementById('red').style.display="block";
-}
+
 function listAdd(event){
 // console.log(event.target.value);
 if(event.target.value == 'ha-noi'){
