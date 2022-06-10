@@ -1,31 +1,120 @@
-.main{
-    position: relative;
-    margin-left: 0;
-    margin-top: 60px;
-    transform: rotate(225deg);
+html {
+  background-color: #ddd;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.hvuong_1{  
-   top: 50px;
-    border-radius: 50%;
- position: absolute;
- height: 100px;
- width: 100px;
- background-color: palevioletred;
+.container {
+  max-width: 1300px;
+  margin: auto;
 }
-.hvuong_2{
-    
-    height: 100px;
-    width: 100px;
-    background-color:  palevioletred;
-    ;
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: -5px 0;
+  padding-bottom: 5px;
 }
-.h_tron{
-    border-radius: 50%;
-    top:0;
-    left: 50px;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-color:  palevioletred;
+
+[class*="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+img {
+  cursor: pointer;
+}
+
+/* .anime_img{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+} */
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+.d-flex{
+  display: flex;
+}
+.j-conten{
+  justify-content: center;
+}
+.j-conte-between{
+  justify-content: space-between;
+}
+.f-colum{
+  flex-direction: column;
+}
+.a-item{
+  align-items: center;
+}
+.f-wrap{
+  flex-wrap: wrap;
+}
+.listW{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 15%;
+  /* margin: 5px; */
+  padding-right: 100px;
+
+}
+.container_1{
+  margin-left: 60px;
+}
+.rank_fix_1{
+  
+}
+.rank_fix{
+ 
 }
