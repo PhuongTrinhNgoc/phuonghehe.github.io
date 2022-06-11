@@ -134,143 +134,155 @@
 //   }
 
 let listCty = [
-  {
-    nameWord: "Nhân viên lái xe cho văn phòng",
-    name: "TNHH công nghệ",
-    luong: {
-      min: 8,
-      max: 12,
+    {
+      nameWord: "Nhân viên lái xe cho văn phòng",
+      name: "TNHH công nghệ",
+      luong: {
+        min: 8,
+        max: 12,
+      },
+      adrees: "Đà Nẵng",
+      style: 'Nhân viên chính thức'
     },
-    adrees: "Đà Nẵng",
-  },
-  {
-    nameWord: "Phó Giám đốc kinh doanh",
-    name: "Công Ty CP XNK Hóa Chất & Thiết Bị Kim Ngưu",
-    luong: {
-      min: 20,
-      max: 30,
+    {
+      nameWord: "Phó Giám đốc kinh doanh",
+      name: "Công Ty CP XNK Hóa Chất & Thiết Bị Kim Ngưu",
+      luong: {
+        min: 20,
+        max: 30,
+      },
+      adrees: "Cần Thơ",
+      style: 'Tạm thời/dự án'
     },
-    adrees: "Cần Thơ",
-  },
-  {
-    nameWord: "Cửa Hàng trưởng - Manager ",
-    name: "Dalat Hasfarm",
-    luong: {
-      min: 12,
-      max: 15,
+    {
+      nameWord: "Cửa Hàng trưởng - Manager ",
+      name: "Dalat Hasfarm",
+      luong: {
+        min: 12,
+        max: 15,
+      },
+      adrees: "Hồ Chí Minh",
+      style: 'Thời vụ/nghề tự do'
     },
-    adrees: "Hồ Chí Minh",
-  },
-  {
-    nameWord: "Quản lý và Giám sát An Ninh - Cameraman  ",
-    name: "Wipro Consumer Care Vietnam",
-    luong: {
-      min: 7,
-      max: 10,
+    {
+      nameWord: "Quản lý và Giám sát An Ninh - Cameraman  ",
+      name: "Wipro Consumer Care Vietnam",
+      luong: {
+        min: 7,
+        max: 10,
+      },
+      adrees: "Bình Dương",
+      style: 'Thực tập'
     },
-    adrees: "Bình Dương",
-  },
-  {
-    nameWord: "Chuyên VIÊN TƯ VẤN DỰ ÁN [QUẬN 2]  ",
-    name: "Công Ty TNHH Thương Mại Giải Pháp Ưu Việt",
-    luong: {
-      min: 12,
-      max: 20,
+    {
+      nameWord: "Chuyên VIÊN TƯ VẤN DỰ ÁN [QUẬN 2]  ",
+      name: "Công Ty TNHH Thương Mại Giải Pháp Ưu Việt",
+      luong: {
+        min: 12,
+        max: 20,
+      },
+      adrees: "Hồ Chí Minh",
+      style: 'Nhân viên chính thức'
     },
-    adrees: "Hồ Chí Minh",
-  },
-  {
-    nameWord: "Nhân VIÊN KINH DOANH SHOWROOM [QUẬN 7]  ",
-    name: "Công Ty TNHH Thương Mại Giải Pháp Ưu Việt",
-    luong: {
-      min: 8,
-      max: 18,
+    {
+      nameWord: "Nhân VIÊN KINH DOANH SHOWROOM [QUẬN 7]  ",
+      name: "Công Ty TNHH Thương Mại Giải Pháp Ưu Việt",
+      luong: {
+        min: 8,
+        max: 18,
+      },
+      adrees: "Hồ Chí Minh",
+      style: 'Nhân viên chính thức'
     },
-    adrees: "Hồ Chí Minh",
-  },
-];
-
-document.querySelector(".body").innerHTML = listCty
-  .map((a) => {
-    return `<div class="listW">
-        <h2> ${a.nameWord} </h2>
-        <p> ${a.name} </p>
-
-               <p> ${a.luong.min} tr</p>
-              <p> ${a.luong.max} tr</p>
-               <p> ${a.adrees} </p></div>
-               `;
-  })
-  .join(",")
-  .replaceAll(/,/g, " ");
-
-let luong = [3, 5, 7, 10, 15, 20, 30, 40, 50, 60, 70];
-
-// let val =[3,5 , 7, 10,15,20,30,40,50,60,70];
-
-let rank = [
-  "Sinh viên/thực tập sinh",
-  "Mới tốt ngiệp",
-  "Nhân viên",
-  "Trưởng nhóm/giám sát",
-  "Quản lý",
-  "Quản lý cấp cao",
-  "Điều hành cấp cao",
-];
-
-let style = [
-  "nhân viên chính thức",
-  "tạm thời/dự án",
-  "thời vụ/nghề tự do",
-  "thực tập",
-];
-
-const newWage = document.getElementById("select-1");
-const newVal = document.getElementById("select-2");
-const newRank = document.getElementById("select-3");
-const newStyle = document.getElementById("select-4");
-
-const resut= document.querySelector(".body");
-
-let newWage2 = luong.map((a) => {
-  return `<option value=${a}>từ ${a}.000.000</option>`;
-});
-
-newWage.innerHTML += newWage2;
-let newRank2 = rank.map((b) => {
-  return `<option value=${b}>${b}</option>`;
-});
-newRank.innerHTML += newRank2;
-
-let newStyle2 = style.map((b) => {
-  return `<option value=${b}>${b}</option>`;
-});
-newStyle.innerHTML += newStyle2;
-
-function clickHere(e) {
-  e.preventDefault();
-  let clickCty = listCty.filter((a) => {
-    return (a.luong.min >= newWage.value || a.luong.max >= newWage.value)&&
-        a.nameWord.includes(newRank.value)||(a.luong.min>=20 && (a.nameWord.includes("Quản")||a.nameWord.includes("Phó")));
-    // return (a.luong.min >= newWage.value || a.luong.max >= newWage2.value) &&
-    //   (a.nameWord.toLowerCase().includes(newRank.value.toLowerCase()));
-  });
-  console.log(clickCty)
-
-  let newArr = clickCty.map((a) => {
-    return `<div class="listW">
-                  <h2> ${a.nameWord} </h2>
-                  <p> ${a.name} </p>
-                    <p> ${a.luong.min} tr</p>
-                  <p> ${a.luong.max} tr</p>
-                   <p> ${a.adrees} </p></div>`;
-  });
-
-  resut.innerHTML = newArr
+  ];
+  
+  document.querySelector(".body").innerHTML = listCty
+    .map((a) => {
+      return `<div class="listW">
+      <div class="info-item">
+          <h2> ${a.nameWord} </h2>
+          <p> ${a.name} </p>
+              <p> ${a.style}</p>
+                 <p> ${a.luong.min} tr</p>
+                <p> ${a.luong.max} tr</p>
+                 <p> ${a.adrees} </p>
+                 </div>
+                 </div>
+                 `;
+    })
     .join(",")
     .replaceAll(/,/g, " ");
-  // console.log(clickCty)
-}
+  
+  let luong = [3, 5, 7, 10, 15, 20, 30, 40, 50, 60, 70];
+  
+  // let val =[3,5 , 7, 10,15,20,30,40,50,60,70];
+  
+  let rank = [
+    "sinh viên/thực tập sinh",
+    "mới tốt ngiệp",
+    "nhân viên",
+    "trưởng nhóm/giám sát",
+    "quản lý",
+    "quản lý cấp cao",
+    "điều hành cấp cao",
+  ];
+  
+  let style = [
+    "nhân viên chính thức",
+    "tạm thời/dự án",
+    "thời vụ/nghề tự do",
+    "thực tập",
+  ];
+  
+  const newWage = document.getElementById("select-1");
+  const newVal = document.getElementById("select-2");
+  const newRank = document.getElementById("select-3");
+  const newStyle = document.getElementById("select-4");
+  
+  let newWage2 = luong.map((a) => {
+    return `<option value= ${a}>từ ${a}.000.000</option>`;
+  });
+  
+  newWage.innerHTML += newWage2;
+  let newRank2 = rank.map((b) => {
+    return `<option value= ${b}>${b}</option>`;
+  });
+  newRank.innerHTML += newRank2;
+  
+  let newStyle2 = style.map((b) => {
+    return `<option value= ${b}>${b}</option>`;
+  });
+  newStyle.innerHTML += newStyle2;
+  
+  
+  document.getElementById("button").onclick = function clickHere() {
+    let clickCty = listCty.filter(a => {
+    return   a.luong.min >= newWage.value || a.luong.max >= newWage.value ||
+        a.nameWord.includes(newRank.value)||(a.luong.min>=20 && (a.nameWord.includes("Quản")||a.nameWord.includes("Phó")))
+}) 
+    //    newRank.value != ""  && newWage.value !='' &&
+
+    //       a.nameWord.includes(newRank.value)||(a.luong.min>=20 && (a.nameWord.includes("Quản")||a.nameWord.includes("Phó"))) || a.style.includes(newStyle.value);
+     
+    // })
+      
+    document.querySelector(".body").innerHTML = clickCty
+      .map((a) => {
+        return `<div class="listW">
+            <div class="info-item">
+                    <h2> ${a.nameWord} </h2>
+                    <p> ${a.name} </p>
+                    <p> ${a.style}</p>
+                      <p> ${a.luong.min} tr</p>
+                    <p> ${a.luong.max} tr</p>
+                     <p> ${a.adrees} </p>
+                     </div>
+                     </div>`;
+      })
+      .join(",")
+      .replaceAll(/,/g, " ");
+    // console.log(clickCty)
+  };
 
 //   a.nameWord.toLowerCase().includes(newRank.value.toLowerCase())
 
