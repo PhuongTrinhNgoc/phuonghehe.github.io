@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="main.css">
+
+<body>
+  <h1>Bài 3</h1>
+  <form name="search">
+    <label>Bạn đang tìm gì:
+      <input id="inputValue" type="text" name="search">
+    </label>
+    <input id="input" type="submit" value="Tìm kiếm!">
+  </form>
+
+  <hr>
+
+  <form id="form" name="search-person">
+    Tìm kiếm nâng cao:
+    <table id="salary">
+      <tbody>
+        <tr>
+          <td>Lương:</td>
+          <td id="range-list">
+            <label>
+              <input type="radio" name="salary" value="young"> < 18 tr </label>
+            <label>
+              <input type="radio" name="salary" value="mature">18-30 tr</label>
+            <label>
+              <input type="radio" name="salary" value="senior"> > 50tr</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Điều kiện đi kèm:</td>
+          <td>
+            <select name="level" id="level">
+              <option value="employee">employee</option>
+              <option value="student">student</option>
+            </select>
+            <select name="status" id="status">
+              <option value="nhan-vien-chinh-thuc">nhan vien chinh thuc</option>
+              <option value="thoi-vu-tu-do">thoi vu tu do</option>
+            </select>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <input id="input2" type="submit" value="Tìm kiếm!">
+  </form>
+  <div id="div" class="body d-flex j-content f-wrap"></div>
+</body>
+<script src="script.js"></script>
+</html>

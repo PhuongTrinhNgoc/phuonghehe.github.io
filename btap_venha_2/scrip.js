@@ -192,7 +192,7 @@ let listCty = [
         max: 18,
       },
       adrees: "Hồ Chí Minh",
-      style: 'Nhân viên chính thức'
+      style: "Thực tập"
     },
   ];
   
@@ -218,24 +218,25 @@ let listCty = [
   // let val =[3,5 , 7, 10,15,20,30,40,50,60,70];
   
   let rank = [
-    "sinh viên/thực tập sinh",
-    "mới tốt ngiệp",
-    "nhân viên",
-    "trưởng nhóm/giám sát",
-    "quản lý",
-    "quản lý cấp cao",
-    "điều hành cấp cao",
+    "Sinh viên/thực tập sinh",
+    "Mới tốt ngiệp",
+    "Nhân viên",
+    "Trưởng nhóm/giám sát",
+    "Quản lý",
+    "Quản lý cấp cao",
+    "Điều hành cấp cao",
   ];
+
   
   let style = [
-    "nhân viên chính thức",
-    "tạm thời/dự án",
-    "thời vụ/nghề tự do",
-    "thực tập",
+    "Nhân viên chính thức",
+    "Tạm thời/dự án",
+    "Thời vụ/nghề tự do",
+    "Thực tập",
   ];
   
   const newWage = document.getElementById("select-1");
-  const newVal = document.getElementById("select-2");
+  // const newVal = document.getElementById("select-2");
   const newRank = document.getElementById("select-3");
   const newStyle = document.getElementById("select-4");
   
@@ -255,16 +256,13 @@ let listCty = [
   newStyle.innerHTML += newStyle2;
   
   
-  document.getElementById("button").onclick = function clickHere() {
+  document.getElementById("button").onclick = function() {
     let clickCty = listCty.filter(a => {
-    return   a.luong.min >= newWage.value || a.luong.max >= newWage.value ||
-        a.nameWord.includes(newRank.value)||(a.luong.min>=20 && (a.nameWord.includes("Quản")||a.nameWord.includes("Phó")))
-}) 
-    //    newRank.value != ""  && newWage.value !='' &&
-
-    //       a.nameWord.includes(newRank.value)||(a.luong.min>=20 && (a.nameWord.includes("Quản")||a.nameWord.includes("Phó"))) || a.style.includes(newStyle.value);
-     
-    // })
+      return    a.nameWord.includes(newRank.value) && (a.luong.min >= newWage.value || a.luong.max >= newWage.value) && a.style.includes(newStyle.value)
+   
+  }) 
+  
+    
       
     document.querySelector(".body").innerHTML = clickCty
       .map((a) => {
@@ -284,75 +282,4 @@ let listCty = [
     // console.log(clickCty)
   };
 
-//   a.nameWord.toLowerCase().includes(newRank.value.toLowerCase())
 
-// const nodeElementSelec1 = document.getElementById("1");
-// const nodeElementSelec2 = document.getElementById("2");
-// const nodeElementSelec3 = document.getElementById("3");
-
-// const nodeElementSelecDiv = document.querySelector(".name-build");
-
-// nodeElementSelec1.innerHTML += luong.map((a) => {
-//   return `<option value=${a}>Từ ${a}.000.000</option>`;
-// });
-// nodeElementSelec2.innerHTML += rank.map((a) => {
-//   return `<option value=${a}>${a}</option>`;
-// });
-// nodeElementSelec3.innerHTML += infoWork.map((a) => {
-//   return `<option value=${a}>${a}</option>`;
-// });
-
-// let myAray= inforBuild.map((a) => {
-//     let b='';
-//     if(a.work.length>20){
-//         b+=a.work.slice(0,18) +'...';
-//     }else b+=a.work;
-//   return `<div class='info'>
-//         <div class='info-item'>
-//         <h3>${b}</h3>
-//         <h6>${a.name}</h6>
-//         <span>Từ ${a.cD.min} Tr - ${a.cD.max} Tr</span>
-//         <p>${a.adres}</p></div></div>`;
-// });
-// nodeElementSelecDiv.innerHTML=myAray.join(',').replaceAll(/,/g,' ')
-
-// let abc=document.forms['selec'].helo;
-// let abcd=Array.from(abc)
-// let handlClick=(e)=>{
-//     e.preventDefault();
-//     let newAry = abcd.map(x=>x.value)
-// console.log(newAry)
-//     let sear=inforBuild.filter(a=>{
-//            return (a.cD.min>=newAry[0]||a.cD.max>=newAry[0])&&
-//         (a.work.includes(newAry[1])|| a.work.includes('Chuyên')||a.work.includes('Phóng'))&&
-//         a.tyle.includes(newAry[2]);
-
-//     })
-//  let myAray2=sear.map((a) => {
-//         let b='';
-//         if(a.work.length>20){
-//             b+=a.work.slice(0,18) +'...';
-//         }else b+=a.work;
-//       return `<div class='info'>
-//             <div class='info-item'>
-//             <h3>${b}</h3>
-//             <h6>${a.name}</h6>
-//             <span>Từ ${a.cD.min} Tr - ${a.cD.max} Tr</span>
-//             <p>${a.adres}</p></div></div>`;
-//     });
-
-//     nodeElementSelecDiv.innerHTML=myAray2.join(',').replaceAll(/,/g,' ')
-//     elemenClasOM.style.display='none'
-
-// }
-
-// const elemenClasOM=document.querySelector('.om');
-
-// const handlShow=()=>{
-//     elemenClasOM.style.display='block'
-
-// }
-
-// const handlClick_1 = ()=>{
-//     window.location.reload()
-// }

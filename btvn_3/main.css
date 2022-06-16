@@ -1,0 +1,146 @@
+html {
+    background-color: #ddd;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .container {
+   
+    display: flex;
+     
+     
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: -5px 0;
+    padding-bottom: 5px;
+  }
+  
+  [class*="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+  img {
+    cursor: pointer;
+  }
+  
+  
+  .col-1 {
+    width: 8.333333%;
+  }
+  
+  .col-2 {
+    width: 16.666667%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.333333%;
+  }
+  
+  .col-5 {
+    width: 41.666667%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.333333%;
+  }
+  
+  .col-8 {
+    width: 66.666667%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.333333%;
+  }
+  
+  .col-11 {
+    width: 91.666667%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .j-conten{
+    justify-content: center;
+  }
+  .j-conte-between{
+    justify-content: space-between;
+  }
+  .j-conte-aroud{
+    justify-content: space-around;
+  }
+  .j-conte-evelyn{
+    justify-content: space-evenly;
+  }
+  .f-colum{
+    flex-direction: column;
+  }
+  .a-item{
+    align-items: center;
+  }
+  .f-wrap{
+    flex-wrap: wrap;
+  }
+  .listW{
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+   
+    margin-right:26px
+  }
+  .info-item{
+      box-shadow: 1px 1px 5px gray;
+      padding: 5px 0 0 25px;
+      width: 100%;
+      height: 100%;
+    
+  }
+  .all_btn{
+    text-align: end;
+    padding-top: 20px;
+  }
+  
+  .div_all{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  .body{
+    width: 100%;
+    margin-left: 165px;
+  }
+  select{
+    padding: 5px;
+  }
+  button{
+    position: fixed;
+    padding: 10px;
+    top: 20px;
+    right: 140px;
+  }
