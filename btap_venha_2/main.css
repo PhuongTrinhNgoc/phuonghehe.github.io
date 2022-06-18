@@ -141,9 +141,124 @@ img {
 select{
   padding: 5px;
 }
-button{
-  position: fixed;
-  padding: 10px;
-  top: 20px;
-  right: 140px;
+
+
+table,
+tr,
+th,
+td{
+    border: 1px solid gray;
+}
+td,
+th,
+tr{
+    padding: 5px;
+}
+table{
+  border-collapse: collapse;
+}
+
+.main_head {
+  /* background-color: rgba(255, 255, 255, 0.515); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-6_3 {
+  top: 46px;
+  left: 626px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.col-6{
+  width: 50%;
+}
+.main_right2 {
+  width: 100%;
+  position: relative;
+}
+.main_right {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  padding: 25px 25px 0 25px;
+  max-width: 70%;
+  background: #fff;
+}
+.close_text {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.border2 {
+  border: 0.1px solid gray;
+  margin-bottom: 15px;
+}
+.fa-xmark2 {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: 27px;
+    right: -3px;
+    font-size: 20px;
+    color: gray;
+    /* background-color: #ebedf0; */
+    border-radius: 50%;
+    
+}
+.fa-xmark2:hover{
+  cursor: pointer;
+  color: #ddd;
+}
+.fa-solid, .fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+input {
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  padding: 15px 15px;
+  /* padding: 8px; */
+  width: 89%;
+  font-size: 17px;
+  margin-left: 12px;
+}
+.button {
+  border-radius: 6px;
+  background: #1877f2;
+  padding: 16px;
+  width: 100%;
+  font-size: 17px;
+  border: 0;
+  /* margin-left: -13px; */
+}
+.a_button {
+  color: #ffff;
+}
+a {
+  color: gray;
+  text-decoration: none;
+}
+.all_button:hover button{
+  cursor: pointer;
+  background-color: #365899;
+  border-color: #365899;
+}
+.main_8,
+.main_9{
+  display: none;
+}
+.text_button{
+  text-align: center;
 }

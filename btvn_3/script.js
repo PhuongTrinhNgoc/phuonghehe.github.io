@@ -124,19 +124,21 @@ $("#input").click(function (e) {
   $("#inputValue").val("");
 });
 
-$("#input2").click(function (e) { 
+$("#input2").click(function (e) {
   e.preventDefault();
   let newVal = $("#level").val();
   let newSt = $("#status").val();
-  if($('input[name=salary]:checked').val() == "young"){
+  if ($("input[name=salary]:checked").val() == "young") {
     let filJob2 = jobs.filter((b) => {
-        return parseInt(b.salary) < 18 &&
+      return (
+        parseInt(b.salary) < 18 &&
         b.status.includes(newSt) &&
-        b.level.includes(newVal);
-      });
-      let okok2 = filJob2
-        .map((a) => {
-          return `<div class="listW">
+        b.level.includes(newVal)
+      );
+    });
+    let okok2 = filJob2
+      .map((a) => {
+        return `<div class="listW">
                       <div class="info-item">
                             <h2> ${a.jobName} </h2>
                             <p> ${a.company} </p>
@@ -148,21 +150,23 @@ $("#input2").click(function (e) {
                             <p> ${a.benefit} </p>
                             </div>
                             </div>`;
-        })
-        .join(",")
-        .replaceAll(/,/g, " ");
-    
-      $("#div").html(`${okok2}`);
-}
-    else if($('input[name=salary]:checked').val() == "mature"){
-        let filJob2 = jobs.filter((b) => {
-            return parseInt(b.salary) > 18 && parseInt(b.salary) < 30 &&
-            b.status.includes(newSt) &&
-            b.level.includes(newVal);
-          });
-          let okok2 = filJob2
-            .map((a) => {
-              return `<div class="listW">
+      })
+      .join(",")
+      .replaceAll(/,/g, " ");
+
+    $("#div").html(`${okok2}`);
+  } else if ($("input[name=salary]:checked").val() == "mature") {
+    let filJob2 = jobs.filter((b) => {
+      return (
+        parseInt(b.salary) > 18 &&
+        parseInt(b.salary) < 30 &&
+        b.status.includes(newSt) &&
+        b.level.includes(newVal)
+      );
+    });
+    let okok2 = filJob2
+      .map((a) => {
+        return `<div class="listW">
                           <div class="info-item">
                                 <h2> ${a.jobName} </h2>
                                 <p> ${a.company} </p>
@@ -174,21 +178,22 @@ $("#input2").click(function (e) {
                                 <p> ${a.benefit} </p>
                                 </div>
                                 </div>`;
-            })
-            .join(",")
-            .replaceAll(/,/g, " ");
-        
-          $("#div").html(`${okok2}`);
-    }
-    else if ($('input[name=salary]:checked').val() == "senior"){
-        let filJob2 = jobs.filter((b) => {
-            return parseInt(b.salary) > 50&&
-            b.status.includes(newSt) &&
-            b.level.includes(newVal);
-          });
-          let okok2 = filJob2
-            .map((a) => {
-              return `<div class="listW">
+      })
+      .join(",")
+      .replaceAll(/,/g, " ");
+
+    $("#div").html(`${okok2}`);
+  } else if ($("input[name=salary]:checked").val() == "senior") {
+    let filJob2 = jobs.filter((b) => {
+      return (
+        parseInt(b.salary) > 50 &&
+        b.status.includes(newSt) &&
+        b.level.includes(newVal)
+      );
+    });
+    let okok2 = filJob2
+      .map((a) => {
+        return `<div class="listW">
                           <div class="info-item">
                                 <h2> ${a.jobName} </h2>
                                 <p> ${a.company} </p>
@@ -200,11 +205,11 @@ $("#input2").click(function (e) {
                                 <p> ${a.benefit} </p>
                                 </div>
                                 </div>`;
-            })
-            .join(",")
-            .replaceAll(/,/g, " ");
-        
-          $("#div").html(`${okok2}`);
-    };   
+      })
+      .join(",")
+      .replaceAll(/,/g, " ");
+
+    $("#div").html(`${okok2}`);
+  }
 });
 // console.log(parseInt($('input[name=salary]:checked').val()));
