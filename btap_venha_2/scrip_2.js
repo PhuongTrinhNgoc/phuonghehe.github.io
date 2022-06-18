@@ -10,7 +10,7 @@ fetch("https://628b4592667aea3a3e2b48e5.mockapi.io/product")
                   <td>${a.description}</td>
                   <td>${a.id}</td>
                   <td>${a.name}</td>
-                  <td>${a.pice}</td>
+                  <td>${a.price}</td>
                   <td><button onclick="fixItem_1(${a.id})" >update</button>
                   <button onclick="clickDele(${a.id})" class="btn_dele" id="btn_del">delete</button></td>
                   
