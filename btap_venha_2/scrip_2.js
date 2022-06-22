@@ -63,7 +63,6 @@ function printValue() {
     description: newInput_2,
     price: newInput_3,
   };
-
   fetch("https://628b4592667aea3a3e2b48e5.mockapi.io/product", {
     method: "POST",
     headers: {
@@ -73,10 +72,6 @@ function printValue() {
   })
     .then((response) => response.json())
     .then(function () {
-      // let courseItem2 = document.querySelector('.item-'+ id);
-      // if(courseItem2){
-      //     document.querySelector('tbody').append(courseItem2);
-      // }
       window.location.reload();
     });
   document.querySelector(".main_8").style = "display:none";
@@ -118,8 +113,6 @@ function upDate(){
           putItems(newData);
       })
 }
-
-
 function putItems(obj){
     fetch("https://628b4592667aea3a3e2b48e5.mockapi.io/product" + "/" + idTing,{
         method:'PUT',
@@ -133,8 +126,6 @@ function putItems(obj){
 }
 
 function clickUpdate(){
-    
     upDate()
     document.querySelector('.main_9').style = 'display:none';
-
 }
