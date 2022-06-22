@@ -9,6 +9,7 @@
   } */
 .main_body
   *{
+    transition: all .3s linear;
     font-family: Poppins,sans-serif;
   }
 
@@ -377,6 +378,11 @@ a.rn-button-style--2.btn-solid, button.rn-button-style--2.btn-solid {
   border-right: 25px solid transparent;
   margin-left: 30px;
   }
+  .icon:hover{
+     
+     transform: scale(1.1);
+    transition: all .3s linear;
+  }
   .h1_about{
     font-size: 60px;
     margin-bottom: 8px;
@@ -413,6 +419,53 @@ a.rn-button-style--2.btn-solid, button.rn-button-style--2.btn-solid {
       margin-right: 5px;
       color: red;
   }
+  .imgner{
+    text-align: center;
+  }
+  
+  .imgner img{
+    max-height: 110px;
+    max-width: 150px;
+  }
+  
+  .col-40{
+    padding: 70px 20px;
+    border: .3px solid gray;
+  }
+  
+  .ep8{
+    padding: 70px 0;
+  }
+  
+  .col-40:hover{
+    transform: scale(1.1);
+    color: white;
+    border-radius: 5px;
+    transition: all .5s linear;
+    background-color: #f9004d;
+    /* -webkit-transform: scale(1.1); */
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  @media (max-width:767px){
+    .imgner img{
+      max-height: 70px;
+      max-width: 110px;
+    }
+    .col-40{
+      padding: 50px 20px;
+      border: 1px solid transparent;
+    }
+  
+    .text-head{
+      padding: 0 50px;
+    }
+    .text-head h1{
+      font-size: 50px;
+      font-weight: 500;
+    }
+  }
+  
 @media (max-width: 767px) and (min-width: 314px) {
     .btn{
         width: 20%;
