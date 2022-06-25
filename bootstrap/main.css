@@ -780,3 +780,13 @@ button.rn-button-style--2:hover {
 a {
   text-decoration: none!important;
 }
+.h1,
+.mt5{
+  text-align: right;
+}
+@media (max-width:800px) {
+  .footer_icon{
+    margin-left: 2px;
+    margin-right: 8px;
+  }
+}
