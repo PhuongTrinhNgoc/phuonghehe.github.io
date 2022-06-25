@@ -1,0 +1,10 @@
+.box{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+    background-color: cornflowerblue;
+  
+}
+.box_2{
+    height: 100vh;
+}
