@@ -772,6 +772,9 @@ button.rn-button-style--2:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+  .child_h3{
+    margin-top: 10px;
+  }
 }
 .next_item{
   text-align: center;
