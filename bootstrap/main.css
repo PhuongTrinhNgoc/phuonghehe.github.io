@@ -409,6 +409,9 @@ button.rn-button-style--2:hover {
 .btn_10 {
   border: 1px solid red;
 }
+@media (min-width: 767px) {
+  *{text-align: center;}
+}
 @media (max-width: 767px) {
   .imgner img {
     max-height: 70px;
