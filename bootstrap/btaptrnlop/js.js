@@ -11,6 +11,10 @@ function showModal() {
         keyboard: false
     })
     myModal.show();
+    function offSp(){
+        document.getElementById('spin').style = "display:none"
+    }
+    setTimeout(offSp, 2000)
 }
 
 function render(carts){
