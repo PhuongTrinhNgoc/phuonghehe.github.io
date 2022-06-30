@@ -75,13 +75,12 @@
             </li>
           </ul>
           <form class="d-flex my-2 my-lg-0">
-            <input
-              class="form-control me-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
+            <button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#modelId">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
             </button>
           </form>
         </div>
@@ -89,11 +88,11 @@
     </nav>
 
 
-    <nav class="breadcrumb">
+    <!-- <nav class="breadcrumb">
       <a class="breadcrumb-item" href="#">Main</a>
       <a class="breadcrumb-item" href="#">Sub</a>
       <span class="breadcrumb-item active" aria-current="page">Active</span>
-    </nav>
+    </nav> -->
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
@@ -111,7 +110,7 @@
                 <a class="a-1" href="">back to shoping</a>
                 <div class="row row_1">
                   <div class="col-7 t-left">
-                    <p>product</p>
+                    <p class="p">product</p>
                   </div>
                   <div class="col-5">
                     <div class="all-text">
@@ -121,8 +120,6 @@
                     </div>
                   </div>
                 </div>
-
-
                 <div class="row row_1 row2">
                   <div class="col-7 t-left">
                     <div class="img-bgr">
@@ -200,4 +197,5 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"
   ></script>
+  <script src="js.js"></script>
 </html>

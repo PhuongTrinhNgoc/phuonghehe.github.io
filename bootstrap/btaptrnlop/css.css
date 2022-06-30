@@ -1,10 +1,24 @@
-.box{
-    height: 300px;
-    width: 300px;
-    border: 2px solid red;
-    background-color: cornflowerblue;
-  
+.row>* {
+   
+    padding-right:0;
+    padding-left: 0;
+   
 }
-.box_2{
-    height: 100vh;
+.img-all{
+    width: 100%;
+}
+.modal-content{
+    position: relative;
+}
+.div_tt{
+    position: absolute;
+    display: flex;
+    width: 7%;
+    top: 91%;
+    right: 115px;
+    bottom: 0;
+}
+#tt{
+    color: red;
+
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Tit</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        <link rel="stylesheet" href="css.css">
     <style>
         .nav-center {
             justify-content: center;
@@ -41,14 +41,12 @@
             margin-right: 0;
             margin: 15px 0;
         }
-
-        #numCarts {
-            font-size: 7px;
-        }
     </style>
 </head>
 
 <body>
+
+
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
@@ -86,17 +84,21 @@
                 </ul>
                 <form class="d-flex">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-center ">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <i class="fa-solid fa-user"></i>
-                        </li>
+                        </li> -->
                         <li class="nav-item ms-md-1">
-                            <i class="fa-solid fa-cart-shopping position-relative" onclick="showModal()">
-                                <span id="numCarts"
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    99+
-                                    <span class="visually-hidden">unread messages</span>
+
+                            <button type="button" class="btn btn-primary position-relative" onclick="showModal()">
+                                <i class="fa-solid fa-cart-shopping" ></i>
+
+                                <span id="inner"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                  
+                                  <span class="visually-hidden"></span>
                                 </span>
-                            </i>
+                              </button>
+
                             <!-- data-bs-toggle="modal"
                             data-bs-target="#exampleModal" -->
                         </li>
@@ -106,6 +108,24 @@
             </div>
         </div>
     </nav>
+
+
+
+    <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -120,7 +140,7 @@
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div> -->
-                <div id="modal" class="modal-body">
+                <div class="modal-body">
                     <h3 style="text-align: center;"> Your cart items</h3>
 
                     <div class="row border-bottom">
@@ -142,39 +162,40 @@
                         </div>
 
                     </div>
-
-                    <div id="cartContent">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        image here
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="col-8">
-                                        content prduct here
-                                    </div>
+                    <div id="content">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-4">
+                                    image here
+                                    <img src="" alt="">
+                                </div>
+                                <div class="col-8">
+                                    content prduct here
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        $9.99
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="number" style="width: 50px;">
-                                    </div>
-                                    <div class="col-4">
-                                        $9.99
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-4">
+                                    $9.99
+                                </div>
+                                <div class="col-4">
+                                    <input name="input" id="input" type="number" style="width: 50px;">
+                                </div>
+                                <div class="col-4">
+                                    $9.99
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="d-flex justify-content-end border-top">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                    <div onclick="closeW()" class="d-flex justify-content-end border-top">
+                        <button onclick="closeW()" id="liveToastBtn" type="button" class="btn btn-success btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    <div class="div_tt" id="td">total:
+                        <div  id="tt">...</div>
                     </div>
                 </div>
                 <!-- <div class="modal-footer">
@@ -184,11 +205,21 @@
             </div>
         </div>
     </div>
+  
 
     <!-- <img src="./static/bg-image.png" class="img-style"></img> -->
 
 
+
+
+
+    
+
     <!-- Bootstrap JavaScript Libraries -->
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
@@ -196,70 +227,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
-    <script>
-
-        var carts = [
-            { id: 1, name: 'product 1', qty: 1, price: 9 },
-            { id: 1, name: 'product 2', qty: 1, price: 7 },
-            { id: 1, name: 'product 3', qty: 1, price: 6 },
-        ];
-
-        // thay đổi giá trị hiển thị carts
-        document.getElementById("numCarts").innerHTML = carts.length;
-
-        function showModal() {
-            // for(let obj of carts)
-            let contentCart = "";
-            for (let i = 0; i < carts.length; i++) {
-                let obj = carts[i];
-                contentCart += `  <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        image here
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="col-8">
-                                        ${obj.name}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-4">
-                                        ${obj.price}
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="number" value="${obj.qty}" style="width: 50px;">
-                                    </div>
-                                    <div class="col-4">
-                                       ${obj.price * obj.qty}
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>`;
-            }
-
-            document.getElementById("cartContent").innerHTML = contentCart;
-
-
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
-                keyboard: false
-            })
-            // var modalToggle = document.getElementById('exampleModal') // relatedTarget
-            myModal.show();
-        }
-
-
-        // bài tập:
-        // hiển thị sổ lượng sản phẩn ở card lên badge
-        // link doc https://getbootstrap.com/docs/5.2/components/badge/
-        // thay đổi qty => giá total cũng sẽ được thay đổi
-
-
-
-    </script>
 </body>
-
+<script src="js.js"></script>
 </html>
