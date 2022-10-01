@@ -16,37 +16,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css.css">
     <style>
-        .nav-center {
-            justify-content: center;
-            width: 100%;
-        }
-
-        .img-style {
-            width: 100vw;
-            height: calc(100vh-40px);
-        }
-
-        .border-bottom {
-            border-bottom: 1px solid #cdcdcd;
-        }
-
-        .border-top {
-            border-top: 1px solid #cdcdcd;
-            margin-top: 50px;
-            padding-top: 20px;
-        }
-
-        .row {
-            margin-left: 0;
-            margin-right: 0;
-            margin: 15px 0;
-        }
+      
     </style>
 </head>
 
 <body>
 
+  <hr>
 
+   
+    
+
+
+    
     <div class="container">    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -107,7 +89,7 @@
             </div>
         </div>
     </nav>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button onclick="closeW()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
     </button>
 </div>
@@ -119,13 +101,13 @@
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <img src="..." class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
+      <img class="i-img" src="/img/QR.jpg" class="rounded me-2" alt="...">
+      <strong class="me-auto">0300585858 sacombank</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body">
-      Hello, world! This is a toast message.
+      hello chuyển khoản cho tui đi bạn
     </div>
   </div>
 </div>
@@ -201,31 +183,78 @@
                         <button onclick="closeW()" id="liveToastBtn" type="button" class="btn btn-success btn btn-primary" data-bs-dismiss="modal">Close</button>
                     </div>
                     <div class="div_tt" id="td">total:
-                        <div  id="tt">...</div>
+                        <div  id="tt">...$</div>
                     </div>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
+           
             </div>
         </div>
     </div>
-  
-
-    <!-- <img src="./static/bg-image.png" class="img-style"></img> -->
-
-
-
-
-
-    
-
-    <!-- Bootstrap JavaScript Libraries -->
-
-
-
-
+    <div class="container">
+        <h1 class="h1 t-center">products</h1>
+        <p class="p t-center">oner it for you or for your beloved onse</p>
+       <div class="content_img">
+         <div class="row">
+           <div class="col-lg-3 col-md-6 col-12 all_item">
+             <div class="img_item">
+               <div class="anh">
+               <img class="img_item" src="/img/alo_files/Desktop/image 1.png" alt="">
+             </div>
+             <div class="text_img">
+               <p class="p_img">spiced mint</p>
+               <p class="p_img_2">9.99$</p>
+             </div>
+             </div>
+             <button onclick="addCart(event)"  id="btn-1">add to cart</button>
+           </div>
+           <div class="col-lg-3 col-md-6 col-12 all_item ">
+             <div class="img_item">
+               <div class="anh">
+               <img class="img_item" src="/img/alo_files/Desktop/image 1.png" alt="">
+             </div>
+             <div class="text_img">
+               <p class="p_img">spiced mint</p>
+               <p class="p_img_2">9.99$</p>
+             </div>
+             </div>
+             <button onclick="addCart(event)"  id="btn-1">add to cart</button>
+           </div>
+           <div class="col-lg-3 col-md-6 col-12 all_item ">
+             <div class="img_item">
+               <div class="anh">
+               <img class="img_item" src="/img/alo_files/Desktop/image 1.png" alt="">
+             </div>
+             <div class="text_img">
+               <p class="p_img">spiced mint</p>
+               <p class="p_img_2">9.99$</p>
+             </div>
+             </div>
+             <button onclick="addCart(event)"  id="btn-1">add to cart</button>
+           </div>
+           <div class="col-lg-3 col-md-6 col-12 all_item ">
+             <div class="img_item">
+               <div class="anh">
+               <img class="img_item" src="/img/alo_files/Desktop/image 1.png" alt="">
+             </div>
+             <div class="text_img">
+               <p class="p_img">spiced mint</p>
+               <p class="p_img_2">9.99$</p>
+             </div>
+             
+             
+             </div>
+             <button onclick="addCart(event)"  id="btn-1">add to cart</button>
+           </div>
+         </div>
+        
+       </div>
+        <div class="container">
+          
+        </div>
+       </div>
+       <form action="">
+           <input class="aaa" onblur="onbl()" type="text">
+       </form>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
@@ -236,3 +265,5 @@
 </body>
 <script src="js.js"></script>
 </html>
+
+<!-- onclick="addItem(event)" -->

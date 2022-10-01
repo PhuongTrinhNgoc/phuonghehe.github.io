@@ -23,7 +23,7 @@ function render(carts){
         <div class="col-6">
             <div class="row">
                 <div class="col-4">
-                img
+                <img class="img-1" src="/img/Desktop/image 1.png" alt="">
                     <img src="" alt="">
                 </div>
                 <div class="col-8">
@@ -40,7 +40,7 @@ function render(carts){
                 <input onClick= "clickId(${a.id})" onchange="changeV(event)" name="input" id="id${a.id}" value="${a.qty}" type="number" style="width: 50px;">         
                 </div>
                 <div id="tol${a.id}" class="col-4">
-                    ${a.price * a.qty}
+                    ${a.price * a.qty}$
                 </div>
             </div>
 
@@ -71,7 +71,7 @@ function changeV(e){
  let totalMoney = newArr.reduce((a,b)=>{
     return a + b.price * b.qty
 },0)
-document.getElementById('tt').textContent = totalMoney
+document.getElementById('tt').textContent =   totalMoney  + '$' 
 }
 
 
@@ -90,5 +90,32 @@ if (toastTrigger) {
   })
 }
 function closeW(){
+    
     document.getElementsByClassName("modal-content").style = "display:none"
+}
+
+
+
+function addCart(e){
+
+    
+ let newC = { id: Math.random()*100, name: 'product 3', qty: 1, price: 6 };
+    carts.push(newC);
+
+ document.getElementById('inner').innerHTML = carts.length + ` <i class="fa-solid fa-cart-shopping" ></i>`;
+
+    let newItem = carts.map(a=>{
+        if (a.id == idTing) {
+        }
+      return a
+       }
+       )
+
+ render(newItem)
+}
+
+const $ = document.querySelector.bind(document)
+function onbl(){
+    const newArr = $(".aaa").value
+   if(newArr)
 }

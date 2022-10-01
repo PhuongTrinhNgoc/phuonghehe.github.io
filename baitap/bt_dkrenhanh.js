@@ -201,12 +201,15 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
 function minNumber(x) {
   x.sort(function (a, b) {
-    return a - b;
+    return b - a;
   });
-  return x[0];
-}
+  for(let i =0;i<x.length;i++) {
+  if(x[0] > x[i+1]){
+    return x[i+1]
+  } 
+}}
 
-minNumber([2, 4, 5, 1, 6]);
+minNumber([2, 4, 5, 1, 6,6,5,9]);
 
 const myInfo = {
   name: "Phuong",
